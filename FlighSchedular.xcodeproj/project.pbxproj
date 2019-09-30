@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48A0DE7923422C4B004B1369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE7823422C4B004B1369 /* AppDelegate.swift */; };
+		48A0DE7B23422C4B004B1369 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE7A23422C4B004B1369 /* SceneDelegate.swift */; };
+		48A0DE7D23422C4B004B1369 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE7C23422C4B004B1369 /* ContentView.swift */; };
+		48A0DE7F23422C4D004B1369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A0DE7E23422C4D004B1369 /* Assets.xcassets */; };
+		48A0DE8223422C4D004B1369 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A0DE8123422C4D004B1369 /* Preview Assets.xcassets */; };
+		48A0DE8523422C4D004B1369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A0DE8323422C4D004B1369 /* LaunchScreen.storyboard */; };
+		48A0DE9023422C4D004B1369 /* FlighSchedularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE8F23422C4D004B1369 /* FlighSchedularTests.swift */; };
+		48A0DE9B23422C4D004B1369 /* FlighSchedularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE9A23422C4D004B1369 /* FlighSchedularUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48A0DE8C23422C4D004B1369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48A0DE6D23422C4B004B1369 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48A0DE7423422C4B004B1369;
+			remoteInfo = FlighSchedular;
+		};
+		48A0DE9723422C4D004B1369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48A0DE6D23422C4B004B1369 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48A0DE7423422C4B004B1369;
+			remoteInfo = FlighSchedular;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48A0DE7523422C4B004B1369 /* FlighSchedular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlighSchedular.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A0DE7823422C4B004B1369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48A0DE7A23422C4B004B1369 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		48A0DE7C23422C4B004B1369 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		48A0DE7E23422C4D004B1369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48A0DE8123422C4D004B1369 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		48A0DE8423422C4D004B1369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48A0DE8623422C4D004B1369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A0DE8B23422C4D004B1369 /* FlighSchedularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlighSchedularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A0DE8F23422C4D004B1369 /* FlighSchedularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighSchedularTests.swift; sourceTree = "<group>"; };
+		48A0DE9123422C4D004B1369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A0DE9623422C4D004B1369 /* FlighSchedularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlighSchedularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A0DE9A23422C4D004B1369 /* FlighSchedularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighSchedularUITests.swift; sourceTree = "<group>"; };
+		48A0DE9C23422C4D004B1369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48A0DE7223422C4B004B1369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A0DE8823422C4D004B1369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A0DE9323422C4D004B1369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48A0DE6C23422C4B004B1369 = {
+			isa = PBXGroup;
+			children = (
+				48A0DE7723422C4B004B1369 /* FlighSchedular */,
+				48A0DE8E23422C4D004B1369 /* FlighSchedularTests */,
+				48A0DE9923422C4D004B1369 /* FlighSchedularUITests */,
+				48A0DE7623422C4B004B1369 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48A0DE7623422C4B004B1369 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48A0DE7523422C4B004B1369 /* FlighSchedular.app */,
+				48A0DE8B23422C4D004B1369 /* FlighSchedularTests.xctest */,
+				48A0DE9623422C4D004B1369 /* FlighSchedularUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48A0DE7723422C4B004B1369 /* FlighSchedular */ = {
+			isa = PBXGroup;
+			children = (
+				48A0DE7823422C4B004B1369 /* AppDelegate.swift */,
+				48A0DE7A23422C4B004B1369 /* SceneDelegate.swift */,
+				48A0DE7C23422C4B004B1369 /* ContentView.swift */,
+				48A0DE7E23422C4D004B1369 /* Assets.xcassets */,
+				48A0DE8323422C4D004B1369 /* LaunchScreen.storyboard */,
+				48A0DE8623422C4D004B1369 /* Info.plist */,
+				48A0DE8023422C4D004B1369 /* Preview Content */,
+			);
+			path = FlighSchedular;
+			sourceTree = "<group>";
+		};
+		48A0DE8023422C4D004B1369 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				48A0DE8123422C4D004B1369 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		48A0DE8E23422C4D004B1369 /* FlighSchedularTests */ = {
+			isa = PBXGroup;
+			children = (
+				48A0DE8F23422C4D004B1369 /* FlighSchedularTests.swift */,
+				48A0DE9123422C4D004B1369 /* Info.plist */,
+			);
+			path = FlighSchedularTests;
+			sourceTree = "<group>";
+		};
+		48A0DE9923422C4D004B1369 /* FlighSchedularUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48A0DE9A23422C4D004B1369 /* FlighSchedularUITests.swift */,
+				48A0DE9C23422C4D004B1369 /* Info.plist */,
+			);
+			path = FlighSchedularUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48A0DE7423422C4B004B1369 /* FlighSchedular */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A0DE9F23422C4D004B1369 /* Build configuration list for PBXNativeTarget "FlighSchedular" */;
+			buildPhases = (
+				48A0DE7123422C4B004B1369 /* Sources */,
+				48A0DE7223422C4B004B1369 /* Frameworks */,
+				48A0DE7323422C4B004B1369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlighSchedular;
+			productName = FlighSchedular;
+			productReference = 48A0DE7523422C4B004B1369 /* FlighSchedular.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48A0DE8A23422C4D004B1369 /* FlighSchedularTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A0DEA223422C4D004B1369 /* Build configuration list for PBXNativeTarget "FlighSchedularTests" */;
+			buildPhases = (
+				48A0DE8723422C4D004B1369 /* Sources */,
+				48A0DE8823422C4D004B1369 /* Frameworks */,
+				48A0DE8923422C4D004B1369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48A0DE8D23422C4D004B1369 /* PBXTargetDependency */,
+			);
+			name = FlighSchedularTests;
+			productName = FlighSchedularTests;
+			productReference = 48A0DE8B23422C4D004B1369 /* FlighSchedularTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48A0DE9523422C4D004B1369 /* FlighSchedularUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A0DEA523422C4D004B1369 /* Build configuration list for PBXNativeTarget "FlighSchedularUITests" */;
+			buildPhases = (
+				48A0DE9223422C4D004B1369 /* Sources */,
+				48A0DE9323422C4D004B1369 /* Frameworks */,
+				48A0DE9423422C4D004B1369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48A0DE9823422C4D004B1369 /* PBXTargetDependency */,
+			);
+			name = FlighSchedularUITests;
+			productName = FlighSchedularUITests;
+			productReference = 48A0DE9623422C4D004B1369 /* FlighSchedularUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48A0DE6D23422C4B004B1369 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Engineer 144";
+				TargetAttributes = {
+					48A0DE7423422C4B004B1369 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					48A0DE8A23422C4D004B1369 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 48A0DE7423422C4B004B1369;
+					};
+					48A0DE9523422C4D004B1369 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 48A0DE7423422C4B004B1369;
+					};
+				};
+			};
+			buildConfigurationList = 48A0DE7023422C4B004B1369 /* Build configuration list for PBXProject "FlighSchedular" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48A0DE6C23422C4B004B1369;
+			productRefGroup = 48A0DE7623422C4B004B1369 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48A0DE7423422C4B004B1369 /* FlighSchedular */,
+				48A0DE8A23422C4D004B1369 /* FlighSchedularTests */,
+				48A0DE9523422C4D004B1369 /* FlighSchedularUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48A0DE7323422C4B004B1369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A0DE8523422C4D004B1369 /* LaunchScreen.storyboard in Resources */,
+				48A0DE8223422C4D004B1369 /* Preview Assets.xcassets in Resources */,
+				48A0DE7F23422C4D004B1369 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A0DE8923422C4D004B1369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A0DE9423422C4D004B1369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48A0DE7123422C4B004B1369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A0DE7923422C4B004B1369 /* AppDelegate.swift in Sources */,
+				48A0DE7B23422C4B004B1369 /* SceneDelegate.swift in Sources */,
+				48A0DE7D23422C4B004B1369 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A0DE8723422C4D004B1369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A0DE9023422C4D004B1369 /* FlighSchedularTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A0DE9223422C4D004B1369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A0DE9B23422C4D004B1369 /* FlighSchedularUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48A0DE8D23422C4D004B1369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48A0DE7423422C4B004B1369 /* FlighSchedular */;
+			targetProxy = 48A0DE8C23422C4D004B1369 /* PBXContainerItemProxy */;
+		};
+		48A0DE9823422C4D004B1369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48A0DE7423422C4B004B1369 /* FlighSchedular */;
+			targetProxy = 48A0DE9723422C4D004B1369 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48A0DE8323422C4D004B1369 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48A0DE8423422C4D004B1369 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48A0DE9D23422C4D004B1369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48A0DE9E23422C4D004B1369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48A0DEA023422C4D004B1369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FlighSchedular/Preview Content\"";
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FlighSchedular/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlighSchedular;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48A0DEA123422C4D004B1369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FlighSchedular/Preview Content\"";
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FlighSchedular/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlighSchedular;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48A0DEA323422C4D004B1369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				INFOPLIST_FILE = FlighSchedularTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlighSchedularTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlighSchedular.app/FlighSchedular";
+			};
+			name = Debug;
+		};
+		48A0DEA423422C4D004B1369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				INFOPLIST_FILE = FlighSchedularTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlighSchedularTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlighSchedular.app/FlighSchedular";
+			};
+			name = Release;
+		};
+		48A0DEA623422C4D004B1369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				INFOPLIST_FILE = FlighSchedularUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlighSchedularUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlighSchedular;
+			};
+			name = Debug;
+		};
+		48A0DEA723422C4D004B1369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25C4CBT4M3;
+				INFOPLIST_FILE = FlighSchedularUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlighSchedularUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlighSchedular;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48A0DE7023422C4B004B1369 /* Build configuration list for PBXProject "FlighSchedular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A0DE9D23422C4D004B1369 /* Debug */,
+				48A0DE9E23422C4D004B1369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A0DE9F23422C4D004B1369 /* Build configuration list for PBXNativeTarget "FlighSchedular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A0DEA023422C4D004B1369 /* Debug */,
+				48A0DEA123422C4D004B1369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A0DEA223422C4D004B1369 /* Build configuration list for PBXNativeTarget "FlighSchedularTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A0DEA323422C4D004B1369 /* Debug */,
+				48A0DEA423422C4D004B1369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A0DEA523422C4D004B1369 /* Build configuration list for PBXNativeTarget "FlighSchedularUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A0DEA623422C4D004B1369 /* Debug */,
+				48A0DEA723422C4D004B1369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48A0DE6D23422C4B004B1369 /* Project object */;
+}
