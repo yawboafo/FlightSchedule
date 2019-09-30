@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		136CE1050F0FA34C0FB1284C /* Pods_FlighSchedularUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86287CFBA4EFDDCE138FA15 /* Pods_FlighSchedularUITests.framework */; };
+		20554C9C2E7825A5DBBB4443 /* Pods_FlighSchedularTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF0B2D0976C107BE80AF7A2 /* Pods_FlighSchedularTests.framework */; };
 		48A0DE7923422C4B004B1369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE7823422C4B004B1369 /* AppDelegate.swift */; };
 		48A0DE7B23422C4B004B1369 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE7A23422C4B004B1369 /* SceneDelegate.swift */; };
 		48A0DE7D23422C4B004B1369 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE7C23422C4B004B1369 /* ContentView.swift */; };
@@ -26,6 +28,27 @@
 		48CAF405234238BD0075BF29 /* SearchPlaceSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF404234238BD0075BF29 /* SearchPlaceSubView.swift */; };
 		48CAF408234239B70075BF29 /* FlightSchedularViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF407234239B70075BF29 /* FlightSchedularViewModelImp.swift */; };
 		48CAF40A23423A020075BF29 /* FlightSchedularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF40923423A020075BF29 /* FlightSchedularViewModel.swift */; };
+		48D5BECD2342454F0023C387 /* ReactiveExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BECC2342454F0023C387 /* ReactiveExtensions.swift */; };
+		48D5BEE423425A120023C387 /* ScheduleRequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BED023425A110023C387 /* ScheduleRequestParameter.swift */; };
+		48D5BEE523425A120023C387 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BED123425A110023C387 /* TokenResponse.swift */; };
+		48D5BEE623425A120023C387 /* OperatingCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BED323425A110023C387 /* OperatingCarrier.swift */; };
+		48D5BEE723425A120023C387 /* ScheduleAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BED423425A110023C387 /* ScheduleAPIResponse.swift */; };
+		48D5BEE823425A120023C387 /* ScheduledTimeLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BED523425A110023C387 /* ScheduledTimeLocal.swift */; };
+		48D5BEE923425A120023C387 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BED623425A110023C387 /* Equipment.swift */; };
+		48D5BEEA23425A120023C387 /* DatePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BED723425A110023C387 /* DatePeriod.swift */; };
+		48D5BEEB23425A120023C387 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BED823425A110023C387 /* Details.swift */; };
+		48D5BEEC23425A120023C387 /* Stops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BED923425A110023C387 /* Stops.swift */; };
+		48D5BEED23425A120023C387 /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEDA23425A110023C387 /* Departure.swift */; };
+		48D5BEEE23425A120023C387 /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEDB23425A110023C387 /* Terminal.swift */; };
+		48D5BEEF23425A120023C387 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEDC23425A110023C387 /* Link.swift */; };
+		48D5BEF023425A120023C387 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEDD23425A110023C387 /* Meta.swift */; };
+		48D5BEF123425A120023C387 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEDE23425A110023C387 /* Flight.swift */; };
+		48D5BEF223425A120023C387 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEDF23425A110023C387 /* Schedule.swift */; };
+		48D5BEF323425A120023C387 /* ScheduleResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEE023425A110023C387 /* ScheduleResource.swift */; };
+		48D5BEF423425A120023C387 /* MarketingCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEE123425A110023C387 /* MarketingCarrier.swift */; };
+		48D5BEF523425A120023C387 /* TotalJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEE223425A110023C387 /* TotalJourney.swift */; };
+		48D5BEF623425A120023C387 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEE323425A110023C387 /* Arrival.swift */; };
+		EBBB07471D18AD8C8A864D0E /* Pods_FlighSchedular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C861C699E77B8A7118234F4 /* Pods_FlighSchedular.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1EB2C49F7BA4FC1D6286E472 /* Pods-FlighSchedular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlighSchedular.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlighSchedular/Pods-FlighSchedular.release.xcconfig"; sourceTree = "<group>"; };
 		48A0DE7523422C4B004B1369 /* FlighSchedular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlighSchedular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A0DE7823422C4B004B1369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A0DE7A23422C4B004B1369 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +121,34 @@
 		48CAF404234238BD0075BF29 /* SearchPlaceSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceSubView.swift; sourceTree = "<group>"; };
 		48CAF407234239B70075BF29 /* FlightSchedularViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedularViewModelImp.swift; sourceTree = "<group>"; };
 		48CAF40923423A020075BF29 /* FlightSchedularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedularViewModel.swift; sourceTree = "<group>"; };
+		48D5BECC2342454F0023C387 /* ReactiveExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveExtensions.swift; sourceTree = "<group>"; };
+		48D5BED023425A110023C387 /* ScheduleRequestParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleRequestParameter.swift; sourceTree = "<group>"; };
+		48D5BED123425A110023C387 /* TokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		48D5BED323425A110023C387 /* OperatingCarrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatingCarrier.swift; sourceTree = "<group>"; };
+		48D5BED423425A110023C387 /* ScheduleAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleAPIResponse.swift; sourceTree = "<group>"; };
+		48D5BED523425A110023C387 /* ScheduledTimeLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduledTimeLocal.swift; sourceTree = "<group>"; };
+		48D5BED623425A110023C387 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		48D5BED723425A110023C387 /* DatePeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePeriod.swift; sourceTree = "<group>"; };
+		48D5BED823425A110023C387 /* Details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		48D5BED923425A110023C387 /* Stops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stops.swift; sourceTree = "<group>"; };
+		48D5BEDA23425A110023C387 /* Departure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
+		48D5BEDB23425A110023C387 /* Terminal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
+		48D5BEDC23425A110023C387 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		48D5BEDD23425A110023C387 /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		48D5BEDE23425A110023C387 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		48D5BEDF23425A110023C387 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		48D5BEE023425A110023C387 /* ScheduleResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleResource.swift; sourceTree = "<group>"; };
+		48D5BEE123425A110023C387 /* MarketingCarrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketingCarrier.swift; sourceTree = "<group>"; };
+		48D5BEE223425A110023C387 /* TotalJourney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalJourney.swift; sourceTree = "<group>"; };
+		48D5BEE323425A110023C387 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
+		6C861C699E77B8A7118234F4 /* Pods_FlighSchedular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlighSchedular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF0B2D0976C107BE80AF7A2 /* Pods_FlighSchedularTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlighSchedularTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7425F901FBDDC20F50FBDB /* Pods-FlighSchedularUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlighSchedularUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlighSchedularUITests/Pods-FlighSchedularUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4E71409CF173D5FA7F37A00 /* Pods-FlighSchedularUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlighSchedularUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlighSchedularUITests/Pods-FlighSchedularUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6DE3D4F478F1398226269DC /* Pods-FlighSchedular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlighSchedular.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlighSchedular/Pods-FlighSchedular.debug.xcconfig"; sourceTree = "<group>"; };
+		C86287CFBA4EFDDCE138FA15 /* Pods_FlighSchedularUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlighSchedularUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BD6E307370A607E2DD9AC0 /* Pods-FlighSchedularTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlighSchedularTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlighSchedularTests/Pods-FlighSchedularTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F330A682CAD40456FB627BC1 /* Pods-FlighSchedularTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlighSchedularTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlighSchedularTests/Pods-FlighSchedularTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48CAF3FB2342348D0075BF29 /* FloatingUIViews.framework in Frameworks */,
+				EBBB07471D18AD8C8A864D0E /* Pods_FlighSchedular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20554C9C2E7825A5DBBB4443 /* Pods_FlighSchedularTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136CE1050F0FA34C0FB1284C /* Pods_FlighSchedularUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +188,7 @@
 				48A0DE9923422C4D004B1369 /* FlighSchedularUITests */,
 				48A0DE7623422C4B004B1369 /* Products */,
 				48A0DEE8234232AE004B1369 /* Frameworks */,
+				6B6B618676848182FA99D82E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +205,8 @@
 		48A0DE7723422C4B004B1369 /* FlighSchedular */ = {
 			isa = PBXGroup;
 			children = (
+				48D5BECE234259F90023C387 /* Models */,
+				48D5BECA2342453B0023C387 /* Helpers */,
 				48CAF406234239910075BF29 /* ViewModels */,
 				48A0DEB023422EE3004B1369 /* Views */,
 				48A0DEA823422C5E004B1369 /* BaseCoordinator */,
@@ -221,6 +279,9 @@
 			isa = PBXGroup;
 			children = (
 				48CAF3ED234234880075BF29 /* FloatingUIViews */,
+				6C861C699E77B8A7118234F4 /* Pods_FlighSchedular.framework */,
+				BAF0B2D0976C107BE80AF7A2 /* Pods_FlighSchedularTests.framework */,
+				C86287CFBA4EFDDCE138FA15 /* Pods_FlighSchedularUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -282,6 +343,71 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		48D5BECA2342453B0023C387 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				48D5BECC2342454F0023C387 /* ReactiveExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		48D5BECE234259F90023C387 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48D5BECF23425A110023C387 /* APIRequestModels */,
+				48D5BED223425A110023C387 /* FlightScheduleModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48D5BECF23425A110023C387 /* APIRequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				48D5BED023425A110023C387 /* ScheduleRequestParameter.swift */,
+				48D5BED123425A110023C387 /* TokenResponse.swift */,
+			);
+			name = APIRequestModels;
+			path = ../../../FlightSchedule/FlightSchedule/Models/APIRequestModels;
+			sourceTree = "<group>";
+		};
+		48D5BED223425A110023C387 /* FlightScheduleModels */ = {
+			isa = PBXGroup;
+			children = (
+				48D5BED323425A110023C387 /* OperatingCarrier.swift */,
+				48D5BED423425A110023C387 /* ScheduleAPIResponse.swift */,
+				48D5BED523425A110023C387 /* ScheduledTimeLocal.swift */,
+				48D5BED623425A110023C387 /* Equipment.swift */,
+				48D5BED723425A110023C387 /* DatePeriod.swift */,
+				48D5BED823425A110023C387 /* Details.swift */,
+				48D5BED923425A110023C387 /* Stops.swift */,
+				48D5BEDA23425A110023C387 /* Departure.swift */,
+				48D5BEDB23425A110023C387 /* Terminal.swift */,
+				48D5BEDC23425A110023C387 /* Link.swift */,
+				48D5BEDD23425A110023C387 /* Meta.swift */,
+				48D5BEDE23425A110023C387 /* Flight.swift */,
+				48D5BEDF23425A110023C387 /* Schedule.swift */,
+				48D5BEE023425A110023C387 /* ScheduleResource.swift */,
+				48D5BEE123425A110023C387 /* MarketingCarrier.swift */,
+				48D5BEE223425A110023C387 /* TotalJourney.swift */,
+				48D5BEE323425A110023C387 /* Arrival.swift */,
+			);
+			name = FlightScheduleModels;
+			path = ../../../FlightSchedule/FlightSchedule/Models/FlightScheduleModels;
+			sourceTree = "<group>";
+		};
+		6B6B618676848182FA99D82E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6DE3D4F478F1398226269DC /* Pods-FlighSchedular.debug.xcconfig */,
+				1EB2C49F7BA4FC1D6286E472 /* Pods-FlighSchedular.release.xcconfig */,
+				E7BD6E307370A607E2DD9AC0 /* Pods-FlighSchedularTests.debug.xcconfig */,
+				F330A682CAD40456FB627BC1 /* Pods-FlighSchedularTests.release.xcconfig */,
+				C4E71409CF173D5FA7F37A00 /* Pods-FlighSchedularUITests.debug.xcconfig */,
+				BE7425F901FBDDC20F50FBDB /* Pods-FlighSchedularUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,10 +415,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48A0DE9F23422C4D004B1369 /* Build configuration list for PBXNativeTarget "FlighSchedular" */;
 			buildPhases = (
+				46BBBE30BAEE121E91FF8954 /* [CP] Check Pods Manifest.lock */,
 				48A0DE7123422C4B004B1369 /* Sources */,
 				48A0DE7223422C4B004B1369 /* Frameworks */,
 				48A0DE7323422C4B004B1369 /* Resources */,
 				48CAF3FD2342348D0075BF29 /* Embed Frameworks */,
+				27B1A4A794D3825E5736B610 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,9 +435,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48A0DEA223422C4D004B1369 /* Build configuration list for PBXNativeTarget "FlighSchedularTests" */;
 			buildPhases = (
+				4619D3F537E5A1CDB5D539A3 /* [CP] Check Pods Manifest.lock */,
 				48A0DE8723422C4D004B1369 /* Sources */,
 				48A0DE8823422C4D004B1369 /* Frameworks */,
 				48A0DE8923422C4D004B1369 /* Resources */,
+				99547017B9995692AE873EA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,6 +455,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48A0DEA523422C4D004B1369 /* Build configuration list for PBXNativeTarget "FlighSchedularUITests" */;
 			buildPhases = (
+				2A2EACA80BF44196E1143C68 /* [CP] Check Pods Manifest.lock */,
 				48A0DE9223422C4D004B1369 /* Sources */,
 				48A0DE9323422C4D004B1369 /* Frameworks */,
 				48A0DE9423422C4D004B1369 /* Resources */,
@@ -425,6 +556,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27B1A4A794D3825E5736B610 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlighSchedular/Pods-FlighSchedular-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlighSchedular/Pods-FlighSchedular-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A2EACA80BF44196E1143C68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlighSchedularUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4619D3F537E5A1CDB5D539A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlighSchedularTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46BBBE30BAEE121E91FF8954 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlighSchedular-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99547017B9995692AE873EA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlighSchedularTests/Pods-FlighSchedularTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlighSchedularTests/Pods-FlighSchedularTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48A0DE7123422C4B004B1369 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -432,16 +664,36 @@
 			files = (
 				48A0DEAB23422CA0004B1369 /* AppCoordinator.swift in Sources */,
 				48CAF408234239B70075BF29 /* FlightSchedularViewModelImp.swift in Sources */,
+				48D5BEED23425A120023C387 /* Departure.swift in Sources */,
+				48D5BEE823425A120023C387 /* ScheduledTimeLocal.swift in Sources */,
+				48D5BEF523425A120023C387 /* TotalJourney.swift in Sources */,
+				48D5BEEF23425A120023C387 /* Link.swift in Sources */,
+				48D5BEE623425A120023C387 /* OperatingCarrier.swift in Sources */,
+				48D5BEF323425A120023C387 /* ScheduleResource.swift in Sources */,
 				48CAF405234238BD0075BF29 /* SearchPlaceSubView.swift in Sources */,
 				48A0DE7923422C4B004B1369 /* AppDelegate.swift in Sources */,
+				48D5BEE523425A120023C387 /* TokenResponse.swift in Sources */,
+				48D5BEF123425A120023C387 /* Flight.swift in Sources */,
+				48D5BEE723425A120023C387 /* ScheduleAPIResponse.swift in Sources */,
+				48D5BEF023425A120023C387 /* Meta.swift in Sources */,
 				48CAF3FF2342380B0075BF29 /* SearchForPlacesViewController.swift in Sources */,
 				48A0DEAD23422CBD004B1369 /* Coordinator.swift in Sources */,
 				48CAF40A23423A020075BF29 /* FlightSchedularViewModel.swift in Sources */,
 				48CAF401234238250075BF29 /* SearchForPlacesCoordinator.swift in Sources */,
+				48D5BEE423425A120023C387 /* ScheduleRequestParameter.swift in Sources */,
+				48D5BEE923425A120023C387 /* Equipment.swift in Sources */,
 				48A0DEB223422F0B004B1369 /* JourneyMapViewController.swift in Sources */,
 				48A0DE7B23422C4B004B1369 /* SceneDelegate.swift in Sources */,
+				48D5BEEA23425A120023C387 /* DatePeriod.swift in Sources */,
 				48A0DE7D23422C4B004B1369 /* ContentView.swift in Sources */,
+				48D5BECD2342454F0023C387 /* ReactiveExtensions.swift in Sources */,
+				48D5BEF623425A120023C387 /* Arrival.swift in Sources */,
+				48D5BEEC23425A120023C387 /* Stops.swift in Sources */,
+				48D5BEEE23425A120023C387 /* Terminal.swift in Sources */,
 				48A0DEAF23422EAA004B1369 /* JourneyMapViewCoordinator.swift in Sources */,
+				48D5BEF423425A120023C387 /* MarketingCarrier.swift in Sources */,
+				48D5BEF223425A120023C387 /* Schedule.swift in Sources */,
+				48D5BEEB23425A120023C387 /* Details.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +856,7 @@
 		};
 		48A0DEA023422C4D004B1369 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DE3D4F478F1398226269DC /* Pods-FlighSchedular.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,6 +877,7 @@
 		};
 		48A0DEA123422C4D004B1369 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB2C49F7BA4FC1D6286E472 /* Pods-FlighSchedular.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -644,6 +898,7 @@
 		};
 		48A0DEA323422C4D004B1369 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7BD6E307370A607E2DD9AC0 /* Pods-FlighSchedularTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -666,6 +921,7 @@
 		};
 		48A0DEA423422C4D004B1369 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F330A682CAD40456FB627BC1 /* Pods-FlighSchedularTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -688,6 +944,7 @@
 		};
 		48A0DEA623422C4D004B1369 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E71409CF173D5FA7F37A00 /* Pods-FlighSchedularUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -708,6 +965,7 @@
 		};
 		48A0DEA723422C4D004B1369 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE7425F901FBDDC20F50FBDB /* Pods-FlighSchedularUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

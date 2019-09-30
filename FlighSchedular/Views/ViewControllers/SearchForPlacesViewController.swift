@@ -17,13 +17,16 @@ class SearchForPlacesViewController: UIViewController {
 		 self.navigationItem.setLeftBarButton(UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(closeView)), animated: true)
 
 	}
+	
 	@objc func closeView(){
 		self.dismiss(animated:true)
-		
 	}
+	
   override func viewDidLayoutSubviews() {
 		view.addSubview(subview)
-	   subview.constrainToSuperView(on: view,top:20)
+	   subview.constrainToSuperView(on: view,
+											  top: 20,
+											  bottom: -20)
 		
 	}
 

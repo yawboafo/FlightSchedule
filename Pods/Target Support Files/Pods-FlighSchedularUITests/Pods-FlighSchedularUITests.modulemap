@@ -1,0 +1,6 @@
+framework module Pods_FlighSchedularUITests {
+  umbrella header "Pods-FlighSchedularUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

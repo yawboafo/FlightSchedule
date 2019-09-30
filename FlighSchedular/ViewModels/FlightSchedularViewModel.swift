@@ -7,9 +7,15 @@
 //
 
 import Foundation
+import MapKit
+import RxSwift
+import RxCocoa
+
 protocol FlightSchedularViewModel: class {
 	var coordinatorDelegate : JourneyMapViewCoordinatorDelegate?{ get set }
-  
+	var searchResults: BehaviorRelay<[MKLocalSearchCompletion]>? { get set }  //= BehaviorRelay(value: [])
+	var searchCompleter : MKLocalSearchCompleter?{get set}
+	var  disposeBag : DisposeBag? {get set }
 	func searchforNearByAirports()
 	
 	

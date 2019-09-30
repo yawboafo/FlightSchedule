@@ -9,8 +9,15 @@
 import UIKit
 class SearchForPlacesCoordinator: Coordinator{
 	
+	var model : FlightSchedularViewModelImp!
+	
+	init(viewmodel: FlightSchedularViewModelImp) {
+		
+		self.model  = viewmodel
+	}
+	
 	func start() -> UIViewController {
-		let subView = SearchPlaceSubView()
+		let subView = SearchPlaceSubView(viewModel: self.model)
 		let viewController = SearchForPlacesViewController()
 		viewController.subview = subView
 		return viewController

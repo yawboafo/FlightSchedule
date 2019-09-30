@@ -14,16 +14,17 @@ protocol JourneyMapViewCoordinatorDelegate: class{
 }
 
 class JourneyMapViewCoordinator: Coordinator{
-	
+	var model : FlightSchedularViewModelImp!
+
 	var searchplacesCoordinator : SearchForPlacesCoordinator!
 	weak var rootViewController: UIViewController!
 
 	
 	func start() -> UIViewController {
 		let mapViewController = JourneyMapViewController()
-		let viewModel = FlightSchedularViewModelImp()
-		viewModel.coordinatorDelegate = self
-		mapViewController.viewModel = viewModel
+		model = FlightSchedularViewModelImp()
+		model.coordinatorDelegate = self
+		mapViewController.viewModel = model
 		self.rootViewController = mapViewController
 		return mapViewController
 	}
@@ -33,7 +34,8 @@ class JourneyMapViewCoordinator: Coordinator{
 
 extension JourneyMapViewCoordinator: JourneyMapViewCoordinatorDelegate{
 	func beginSearch() {
-		  searchplacesCoordinator = SearchForPlacesCoordinator()
+		searchplacesCoordinator = SearchForPlacesCoordinator(viewmodel: self.model)
+		//searchplacesCoordinator.init
 	   	let searchView = searchplacesCoordinator.start()
 		   let navController = UINavigationController(rootViewController: searchView)
 		   navController.modalPresentationStyle = .overFullScreen
