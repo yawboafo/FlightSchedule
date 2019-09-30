@@ -15,6 +15,17 @@
 		48A0DE8523422C4D004B1369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A0DE8323422C4D004B1369 /* LaunchScreen.storyboard */; };
 		48A0DE9023422C4D004B1369 /* FlighSchedularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE8F23422C4D004B1369 /* FlighSchedularTests.swift */; };
 		48A0DE9B23422C4D004B1369 /* FlighSchedularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE9A23422C4D004B1369 /* FlighSchedularUITests.swift */; };
+		48A0DEAB23422CA0004B1369 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DEAA23422CA0004B1369 /* AppCoordinator.swift */; };
+		48A0DEAD23422CBD004B1369 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DEAC23422CBC004B1369 /* Coordinator.swift */; };
+		48A0DEAF23422EAA004B1369 /* JourneyMapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DEAE23422EAA004B1369 /* JourneyMapViewCoordinator.swift */; };
+		48A0DEB223422F0B004B1369 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DEB123422F0B004B1369 /* JourneyMapViewController.swift */; };
+		48CAF3FB2342348D0075BF29 /* FloatingUIViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CAF3FA234234880075BF29 /* FloatingUIViews.framework */; };
+		48CAF3FC2342348D0075BF29 /* FloatingUIViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48CAF3FA234234880075BF29 /* FloatingUIViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48CAF3FF2342380B0075BF29 /* SearchForPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF3FE2342380B0075BF29 /* SearchForPlacesViewController.swift */; };
+		48CAF401234238250075BF29 /* SearchForPlacesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF400234238250075BF29 /* SearchForPlacesCoordinator.swift */; };
+		48CAF405234238BD0075BF29 /* SearchPlaceSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF404234238BD0075BF29 /* SearchPlaceSubView.swift */; };
+		48CAF408234239B70075BF29 /* FlightSchedularViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF407234239B70075BF29 /* FlightSchedularViewModelImp.swift */; };
+		48CAF40A23423A020075BF29 /* FlightSchedularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF40923423A020075BF29 /* FlightSchedularViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +43,28 @@
 			remoteGlobalIDString = 48A0DE7423422C4B004B1369;
 			remoteInfo = FlighSchedular;
 		};
+		48CAF3F9234234880075BF29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48CAF3EE234234880075BF29 /* FloatingUIViews.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 48A0DEBD234230B0004B1369;
+			remoteInfo = FloatingUIViews;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48CAF3FD2342348D0075BF29 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				48CAF3FC2342348D0075BF29 /* FloatingUIViews.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		48A0DE7523422C4B004B1369 /* FlighSchedular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlighSchedular.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +81,22 @@
 		48A0DE9623422C4D004B1369 /* FlighSchedularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlighSchedularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A0DE9A23422C4D004B1369 /* FlighSchedularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighSchedularUITests.swift; sourceTree = "<group>"; };
 		48A0DE9C23422C4D004B1369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A0DEAA23422CA0004B1369 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		48A0DEAC23422CBC004B1369 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		48A0DEAE23422EAA004B1369 /* JourneyMapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewCoordinator.swift; sourceTree = "<group>"; };
+		48A0DEB123422F0B004B1369 /* JourneyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewController.swift; sourceTree = "<group>"; };
+		48CAF3EE234234880075BF29 /* FloatingUIViews.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FloatingUIViews.xcodeproj; sourceTree = "<group>"; };
+		48CAF3F2234234880075BF29 /* FloatingSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSearchBar.swift; sourceTree = "<group>"; };
+		48CAF3F3234234880075BF29 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		48CAF3F4234234880075BF29 /* ClickableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
+		48CAF3F5234234880075BF29 /* FloatingUIViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingUIViews.h; sourceTree = "<group>"; };
+		48CAF3F6234234880075BF29 /* FloatingSearchBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSearchBox.swift; sourceTree = "<group>"; };
+		48CAF3F7234234880075BF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CAF3FE2342380B0075BF29 /* SearchForPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForPlacesViewController.swift; sourceTree = "<group>"; };
+		48CAF400234238250075BF29 /* SearchForPlacesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForPlacesCoordinator.swift; sourceTree = "<group>"; };
+		48CAF404234238BD0075BF29 /* SearchPlaceSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceSubView.swift; sourceTree = "<group>"; };
+		48CAF407234239B70075BF29 /* FlightSchedularViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedularViewModelImp.swift; sourceTree = "<group>"; };
+		48CAF40923423A020075BF29 /* FlightSchedularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedularViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CAF3FB2342348D0075BF29 /* FloatingUIViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +132,7 @@
 				48A0DE8E23422C4D004B1369 /* FlighSchedularTests */,
 				48A0DE9923422C4D004B1369 /* FlighSchedularUITests */,
 				48A0DE7623422C4B004B1369 /* Products */,
+				48A0DEE8234232AE004B1369 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +149,9 @@
 		48A0DE7723422C4B004B1369 /* FlighSchedular */ = {
 			isa = PBXGroup;
 			children = (
+				48CAF406234239910075BF29 /* ViewModels */,
+				48A0DEB023422EE3004B1369 /* Views */,
+				48A0DEA823422C5E004B1369 /* BaseCoordinator */,
 				48A0DE7823422C4B004B1369 /* AppDelegate.swift */,
 				48A0DE7A23422C4B004B1369 /* SceneDelegate.swift */,
 				48A0DE7C23422C4B004B1369 /* ContentView.swift */,
@@ -136,6 +189,99 @@
 			path = FlighSchedularUITests;
 			sourceTree = "<group>";
 		};
+		48A0DEA823422C5E004B1369 /* BaseCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				48A0DEA923422C95004B1369 /* AppCoordinator */,
+				48A0DEAC23422CBC004B1369 /* Coordinator.swift */,
+			);
+			path = BaseCoordinator;
+			sourceTree = "<group>";
+		};
+		48A0DEA923422C95004B1369 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				48A0DEAA23422CA0004B1369 /* AppCoordinator.swift */,
+				48A0DEAE23422EAA004B1369 /* JourneyMapViewCoordinator.swift */,
+				48CAF400234238250075BF29 /* SearchForPlacesCoordinator.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		48A0DEB023422EE3004B1369 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48CAF4032342389E0075BF29 /* ViewControllers */,
+				48CAF402234238970075BF29 /* SubViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48A0DEE8234232AE004B1369 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48CAF3ED234234880075BF29 /* FloatingUIViews */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48CAF3ED234234880075BF29 /* FloatingUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				48CAF3EE234234880075BF29 /* FloatingUIViews.xcodeproj */,
+				48CAF3F1234234880075BF29 /* FloatingUIViews */,
+			);
+			name = FloatingUIViews;
+			path = ../FloatingUIViews;
+			sourceTree = "<group>";
+		};
+		48CAF3EF234234880075BF29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48CAF3FA234234880075BF29 /* FloatingUIViews.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48CAF3F1234234880075BF29 /* FloatingUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				48CAF3F2234234880075BF29 /* FloatingSearchBar.swift */,
+				48CAF3F3234234880075BF29 /* Extensions.swift */,
+				48CAF3F4234234880075BF29 /* ClickableView.swift */,
+				48CAF3F5234234880075BF29 /* FloatingUIViews.h */,
+				48CAF3F6234234880075BF29 /* FloatingSearchBox.swift */,
+				48CAF3F7234234880075BF29 /* Info.plist */,
+			);
+			path = FloatingUIViews;
+			sourceTree = "<group>";
+		};
+		48CAF402234238970075BF29 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				48CAF404234238BD0075BF29 /* SearchPlaceSubView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		48CAF4032342389E0075BF29 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				48A0DEB123422F0B004B1369 /* JourneyMapViewController.swift */,
+				48CAF3FE2342380B0075BF29 /* SearchForPlacesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		48CAF406234239910075BF29 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				48CAF407234239B70075BF29 /* FlightSchedularViewModelImp.swift */,
+				48CAF40923423A020075BF29 /* FlightSchedularViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +292,7 @@
 				48A0DE7123422C4B004B1369 /* Sources */,
 				48A0DE7223422C4B004B1369 /* Frameworks */,
 				48A0DE7323422C4B004B1369 /* Resources */,
+				48CAF3FD2342348D0075BF29 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,6 +373,12 @@
 			mainGroup = 48A0DE6C23422C4B004B1369;
 			productRefGroup = 48A0DE7623422C4B004B1369 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 48CAF3EF234234880075BF29 /* Products */;
+					ProjectRef = 48CAF3EE234234880075BF29 /* FloatingUIViews.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				48A0DE7423422C4B004B1369 /* FlighSchedular */,
@@ -234,6 +387,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		48CAF3FA234234880075BF29 /* FloatingUIViews.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FloatingUIViews.framework;
+			remoteRef = 48CAF3F9234234880075BF29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		48A0DE7323422C4B004B1369 /* Resources */ = {
@@ -267,9 +430,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A0DEAB23422CA0004B1369 /* AppCoordinator.swift in Sources */,
+				48CAF408234239B70075BF29 /* FlightSchedularViewModelImp.swift in Sources */,
+				48CAF405234238BD0075BF29 /* SearchPlaceSubView.swift in Sources */,
 				48A0DE7923422C4B004B1369 /* AppDelegate.swift in Sources */,
+				48CAF3FF2342380B0075BF29 /* SearchForPlacesViewController.swift in Sources */,
+				48A0DEAD23422CBD004B1369 /* Coordinator.swift in Sources */,
+				48CAF40A23423A020075BF29 /* FlightSchedularViewModel.swift in Sources */,
+				48CAF401234238250075BF29 /* SearchForPlacesCoordinator.swift in Sources */,
+				48A0DEB223422F0B004B1369 /* JourneyMapViewController.swift in Sources */,
 				48A0DE7B23422C4B004B1369 /* SceneDelegate.swift in Sources */,
 				48A0DE7D23422C4B004B1369 /* ContentView.swift in Sources */,
+				48A0DEAF23422EAA004B1369 /* JourneyMapViewCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
