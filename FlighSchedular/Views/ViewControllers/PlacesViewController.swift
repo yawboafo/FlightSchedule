@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class SearchForPlacesViewController: UIViewController {
+class PlacesViewController: UIViewController {
 	
 	var subview : SearchPlaceSubView!
 	

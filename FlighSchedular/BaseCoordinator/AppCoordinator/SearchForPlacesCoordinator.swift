@@ -18,7 +18,7 @@ class SearchForPlacesCoordinator: Coordinator{
 	
 	func start() -> UIViewController {
 		let subView = SearchPlaceSubView(viewModel: self.model)
-		let viewController = SearchForPlacesViewController()
+		let viewController = PlacesViewController()
 		viewController.subview = subView
 		return viewController
 	}

@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		136CE1050F0FA34C0FB1284C /* Pods_FlighSchedularUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86287CFBA4EFDDCE138FA15 /* Pods_FlighSchedularUITests.framework */; };
 		20554C9C2E7825A5DBBB4443 /* Pods_FlighSchedularTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF0B2D0976C107BE80AF7A2 /* Pods_FlighSchedularTests.framework */; };
+		488515E72342ACED006FA161 /* IATA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 488515E62342ACED006FA161 /* IATA.bundle */; };
+		4894AF072342B16100754E50 /* IATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF052342B16100754E50 /* IATA.swift */; };
+		4894AF102342C30600754E50 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF0B2342C30600754E50 /* APIError.swift */; };
+		4894AF112342C30600754E50 /* APIRequestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF0C2342C30600754E50 /* APIRequestConstants.swift */; };
+		4894AF122342C30600754E50 /* APIRequestExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF0D2342C30600754E50 /* APIRequestExecuter.swift */; };
+		4894AF132342C30600754E50 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF0E2342C30600754E50 /* APIEndPoint.swift */; };
+		4894AF142342C30600754E50 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF0F2342C30600754E50 /* APIRequest.swift */; };
+		4894AF182342C33000754E50 /* FlightScheduleAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF162342C33000754E50 /* FlightScheduleAPIService.swift */; };
+		4894AF192342C33000754E50 /* FlightScheduleStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF172342C33000754E50 /* FlightScheduleStorageService.swift */; };
 		48A0DE7923422C4B004B1369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE7823422C4B004B1369 /* AppDelegate.swift */; };
 		48A0DE7B23422C4B004B1369 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE7A23422C4B004B1369 /* SceneDelegate.swift */; };
 		48A0DE7D23422C4B004B1369 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DE7C23422C4B004B1369 /* ContentView.swift */; };
@@ -23,7 +32,7 @@
 		48A0DEB223422F0B004B1369 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DEB123422F0B004B1369 /* JourneyMapViewController.swift */; };
 		48CAF3FB2342348D0075BF29 /* FloatingUIViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CAF3FA234234880075BF29 /* FloatingUIViews.framework */; };
 		48CAF3FC2342348D0075BF29 /* FloatingUIViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48CAF3FA234234880075BF29 /* FloatingUIViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		48CAF3FF2342380B0075BF29 /* SearchForPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF3FE2342380B0075BF29 /* SearchForPlacesViewController.swift */; };
+		48CAF3FF2342380B0075BF29 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF3FE2342380B0075BF29 /* PlacesViewController.swift */; };
 		48CAF401234238250075BF29 /* SearchForPlacesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF400234238250075BF29 /* SearchForPlacesCoordinator.swift */; };
 		48CAF405234238BD0075BF29 /* SearchPlaceSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF404234238BD0075BF29 /* SearchPlaceSubView.swift */; };
 		48CAF408234239B70075BF29 /* FlightSchedularViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF407234239B70075BF29 /* FlightSchedularViewModelImp.swift */; };
@@ -48,6 +57,12 @@
 		48D5BEF423425A120023C387 /* MarketingCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEE123425A110023C387 /* MarketingCarrier.swift */; };
 		48D5BEF523425A120023C387 /* TotalJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEE223425A110023C387 /* TotalJourney.swift */; };
 		48D5BEF623425A120023C387 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEE323425A110023C387 /* Arrival.swift */; };
+		48D5BEFA23425C4A0023C387 /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEF723425C490023C387 /* DataCache.swift */; };
+		48D5BEFB23425C4A0023C387 /* General+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEF823425C490023C387 /* General+Extensions.swift */; };
+		48D5BEFC23425C4A0023C387 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEF923425C490023C387 /* Helper.swift */; };
+		48D5BEFE23425CAB0023C387 /* FlightSchedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEFD23425CAB0023C387 /* FlightSchedulesViewController.swift */; };
+		48D5BF012342A9470023C387 /* FlightSchedularLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BF002342A9470023C387 /* FlightSchedularLocationService.swift */; };
+		48D5BF032342A9C50023C387 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BF022342A9C50023C387 /* Address.swift */; };
 		EBBB07471D18AD8C8A864D0E /* Pods_FlighSchedular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C861C699E77B8A7118234F4 /* Pods_FlighSchedular.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +106,15 @@
 
 /* Begin PBXFileReference section */
 		1EB2C49F7BA4FC1D6286E472 /* Pods-FlighSchedular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlighSchedular.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlighSchedular/Pods-FlighSchedular.release.xcconfig"; sourceTree = "<group>"; };
+		488515E62342ACED006FA161 /* IATA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IATA.bundle; sourceTree = "<group>"; };
+		4894AF052342B16100754E50 /* IATA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IATA.swift; sourceTree = "<group>"; };
+		4894AF0B2342C30600754E50 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		4894AF0C2342C30600754E50 /* APIRequestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestConstants.swift; sourceTree = "<group>"; };
+		4894AF0D2342C30600754E50 /* APIRequestExecuter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestExecuter.swift; sourceTree = "<group>"; };
+		4894AF0E2342C30600754E50 /* APIEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		4894AF0F2342C30600754E50 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		4894AF162342C33000754E50 /* FlightScheduleAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightScheduleAPIService.swift; sourceTree = "<group>"; };
+		4894AF172342C33000754E50 /* FlightScheduleStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightScheduleStorageService.swift; sourceTree = "<group>"; };
 		48A0DE7523422C4B004B1369 /* FlighSchedular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlighSchedular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A0DE7823422C4B004B1369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A0DE7A23422C4B004B1369 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +140,7 @@
 		48CAF3F5234234880075BF29 /* FloatingUIViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingUIViews.h; sourceTree = "<group>"; };
 		48CAF3F6234234880075BF29 /* FloatingSearchBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSearchBox.swift; sourceTree = "<group>"; };
 		48CAF3F7234234880075BF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48CAF3FE2342380B0075BF29 /* SearchForPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForPlacesViewController.swift; sourceTree = "<group>"; };
+		48CAF3FE2342380B0075BF29 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		48CAF400234238250075BF29 /* SearchForPlacesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForPlacesCoordinator.swift; sourceTree = "<group>"; };
 		48CAF404234238BD0075BF29 /* SearchPlaceSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceSubView.swift; sourceTree = "<group>"; };
 		48CAF407234239B70075BF29 /* FlightSchedularViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedularViewModelImp.swift; sourceTree = "<group>"; };
@@ -141,6 +165,12 @@
 		48D5BEE123425A110023C387 /* MarketingCarrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketingCarrier.swift; sourceTree = "<group>"; };
 		48D5BEE223425A110023C387 /* TotalJourney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalJourney.swift; sourceTree = "<group>"; };
 		48D5BEE323425A110023C387 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
+		48D5BEF723425C490023C387 /* DataCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataCache.swift; path = "../../../FlightSchedule/FlightSchedule/Helpers+Extenstions/DataCache.swift"; sourceTree = "<group>"; };
+		48D5BEF823425C490023C387 /* General+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "General+Extensions.swift"; path = "../../../FlightSchedule/FlightSchedule/Helpers+Extenstions/General+Extensions.swift"; sourceTree = "<group>"; };
+		48D5BEF923425C490023C387 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = "../../../FlightSchedule/FlightSchedule/Helpers+Extenstions/Helper.swift"; sourceTree = "<group>"; };
+		48D5BEFD23425CAB0023C387 /* FlightSchedulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedulesViewController.swift; sourceTree = "<group>"; };
+		48D5BF002342A9470023C387 /* FlightSchedularLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedularLocationService.swift; sourceTree = "<group>"; };
+		48D5BF022342A9C50023C387 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		6C861C699E77B8A7118234F4 /* Pods_FlighSchedular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlighSchedular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF0B2D0976C107BE80AF7A2 /* Pods_FlighSchedularTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlighSchedularTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7425F901FBDDC20F50FBDB /* Pods-FlighSchedularUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlighSchedularUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlighSchedularUITests/Pods-FlighSchedularUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +210,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4894AF0A2342C30600754E50 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				4894AF0B2342C30600754E50 /* APIError.swift */,
+				4894AF0C2342C30600754E50 /* APIRequestConstants.swift */,
+				4894AF0D2342C30600754E50 /* APIRequestExecuter.swift */,
+				4894AF0E2342C30600754E50 /* APIEndPoint.swift */,
+				4894AF0F2342C30600754E50 /* APIRequest.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		4894AF152342C33000754E50 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4894AF1B2342C37900754E50 /* APIService */,
+				4894AF1A2342C36D00754E50 /* LocationService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4894AF1A2342C36D00754E50 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				48D5BF002342A9470023C387 /* FlightSchedularLocationService.swift */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
+		4894AF1B2342C37900754E50 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				4894AF162342C33000754E50 /* FlightScheduleAPIService.swift */,
+				4894AF172342C33000754E50 /* FlightScheduleStorageService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
 		48A0DE6C23422C4B004B1369 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +273,7 @@
 		48A0DE7723422C4B004B1369 /* FlighSchedular */ = {
 			isa = PBXGroup;
 			children = (
+				4894AF0A2342C30600754E50 /* HTTP */,
 				48D5BECE234259F90023C387 /* Models */,
 				48D5BECA2342453B0023C387 /* Helpers */,
 				48CAF406234239910075BF29 /* ViewModels */,
@@ -217,6 +286,7 @@
 				48A0DE8323422C4D004B1369 /* LaunchScreen.storyboard */,
 				48A0DE8623422C4D004B1369 /* Info.plist */,
 				48A0DE8023422C4D004B1369 /* Preview Content */,
+				488515E62342ACED006FA161 /* IATA.bundle */,
 			);
 			path = FlighSchedular;
 			sourceTree = "<group>";
@@ -329,7 +399,8 @@
 			isa = PBXGroup;
 			children = (
 				48A0DEB123422F0B004B1369 /* JourneyMapViewController.swift */,
-				48CAF3FE2342380B0075BF29 /* SearchForPlacesViewController.swift */,
+				48CAF3FE2342380B0075BF29 /* PlacesViewController.swift */,
+				48D5BEFD23425CAB0023C387 /* FlightSchedulesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -337,6 +408,7 @@
 		48CAF406234239910075BF29 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4894AF152342C33000754E50 /* Services */,
 				48CAF407234239B70075BF29 /* FlightSchedularViewModelImp.swift */,
 				48CAF40923423A020075BF29 /* FlightSchedularViewModel.swift */,
 			);
@@ -346,6 +418,9 @@
 		48D5BECA2342453B0023C387 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				48D5BEF723425C490023C387 /* DataCache.swift */,
+				48D5BEF823425C490023C387 /* General+Extensions.swift */,
+				48D5BEF923425C490023C387 /* Helper.swift */,
 				48D5BECC2342454F0023C387 /* ReactiveExtensions.swift */,
 			);
 			path = Helpers;
@@ -373,6 +448,7 @@
 		48D5BED223425A110023C387 /* FlightScheduleModels */ = {
 			isa = PBXGroup;
 			children = (
+				4894AF052342B16100754E50 /* IATA.swift */,
 				48D5BED323425A110023C387 /* OperatingCarrier.swift */,
 				48D5BED423425A110023C387 /* ScheduleAPIResponse.swift */,
 				48D5BED523425A110023C387 /* ScheduledTimeLocal.swift */,
@@ -390,6 +466,7 @@
 				48D5BEE123425A110023C387 /* MarketingCarrier.swift */,
 				48D5BEE223425A110023C387 /* TotalJourney.swift */,
 				48D5BEE323425A110023C387 /* Arrival.swift */,
+				48D5BF022342A9C50023C387 /* Address.swift */,
 			);
 			name = FlightScheduleModels;
 			path = ../../../FlightSchedule/FlightSchedule/Models/FlightScheduleModels;
@@ -536,6 +613,7 @@
 			files = (
 				48A0DE8523422C4D004B1369 /* LaunchScreen.storyboard in Resources */,
 				48A0DE8223422C4D004B1369 /* Preview Assets.xcassets in Resources */,
+				488515E72342ACED006FA161 /* IATA.bundle in Resources */,
 				48A0DE7F23422C4D004B1369 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,23 +744,34 @@
 				48CAF408234239B70075BF29 /* FlightSchedularViewModelImp.swift in Sources */,
 				48D5BEED23425A120023C387 /* Departure.swift in Sources */,
 				48D5BEE823425A120023C387 /* ScheduledTimeLocal.swift in Sources */,
+				4894AF112342C30600754E50 /* APIRequestConstants.swift in Sources */,
 				48D5BEF523425A120023C387 /* TotalJourney.swift in Sources */,
 				48D5BEEF23425A120023C387 /* Link.swift in Sources */,
 				48D5BEE623425A120023C387 /* OperatingCarrier.swift in Sources */,
 				48D5BEF323425A120023C387 /* ScheduleResource.swift in Sources */,
 				48CAF405234238BD0075BF29 /* SearchPlaceSubView.swift in Sources */,
 				48A0DE7923422C4B004B1369 /* AppDelegate.swift in Sources */,
+				4894AF182342C33000754E50 /* FlightScheduleAPIService.swift in Sources */,
+				4894AF132342C30600754E50 /* APIEndPoint.swift in Sources */,
 				48D5BEE523425A120023C387 /* TokenResponse.swift in Sources */,
+				48D5BF012342A9470023C387 /* FlightSchedularLocationService.swift in Sources */,
 				48D5BEF123425A120023C387 /* Flight.swift in Sources */,
 				48D5BEE723425A120023C387 /* ScheduleAPIResponse.swift in Sources */,
 				48D5BEF023425A120023C387 /* Meta.swift in Sources */,
-				48CAF3FF2342380B0075BF29 /* SearchForPlacesViewController.swift in Sources */,
+				48CAF3FF2342380B0075BF29 /* PlacesViewController.swift in Sources */,
 				48A0DEAD23422CBD004B1369 /* Coordinator.swift in Sources */,
 				48CAF40A23423A020075BF29 /* FlightSchedularViewModel.swift in Sources */,
+				4894AF072342B16100754E50 /* IATA.swift in Sources */,
+				48D5BEFA23425C4A0023C387 /* DataCache.swift in Sources */,
 				48CAF401234238250075BF29 /* SearchForPlacesCoordinator.swift in Sources */,
+				48D5BEFE23425CAB0023C387 /* FlightSchedulesViewController.swift in Sources */,
 				48D5BEE423425A120023C387 /* ScheduleRequestParameter.swift in Sources */,
 				48D5BEE923425A120023C387 /* Equipment.swift in Sources */,
 				48A0DEB223422F0B004B1369 /* JourneyMapViewController.swift in Sources */,
+				4894AF102342C30600754E50 /* APIError.swift in Sources */,
+				48D5BF032342A9C50023C387 /* Address.swift in Sources */,
+				48D5BEFC23425C4A0023C387 /* Helper.swift in Sources */,
+				48D5BEFB23425C4A0023C387 /* General+Extensions.swift in Sources */,
 				48A0DE7B23422C4B004B1369 /* SceneDelegate.swift in Sources */,
 				48D5BEEA23425A120023C387 /* DatePeriod.swift in Sources */,
 				48A0DE7D23422C4B004B1369 /* ContentView.swift in Sources */,
@@ -690,9 +779,12 @@
 				48D5BEF623425A120023C387 /* Arrival.swift in Sources */,
 				48D5BEEC23425A120023C387 /* Stops.swift in Sources */,
 				48D5BEEE23425A120023C387 /* Terminal.swift in Sources */,
+				4894AF122342C30600754E50 /* APIRequestExecuter.swift in Sources */,
 				48A0DEAF23422EAA004B1369 /* JourneyMapViewCoordinator.swift in Sources */,
+				4894AF192342C33000754E50 /* FlightScheduleStorageService.swift in Sources */,
 				48D5BEF423425A120023C387 /* MarketingCarrier.swift in Sources */,
 				48D5BEF223425A120023C387 /* Schedule.swift in Sources */,
+				4894AF142342C30600754E50 /* APIRequest.swift in Sources */,
 				48D5BEEB23425A120023C387 /* Details.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

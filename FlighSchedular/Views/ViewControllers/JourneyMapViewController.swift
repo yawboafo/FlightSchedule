@@ -48,7 +48,7 @@ class JourneyMapViewController: UIViewController {
 
 extension JourneyMapViewController: FloatingSearchBarDelegate{
 	func barClicked() {
-		viewModel?.searchforNearByAirports()
+		viewModel?.openSearchAirportView()
 	}
 	
 	

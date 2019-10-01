@@ -10,7 +10,7 @@ import UIKit
 
 
 protocol JourneyMapViewCoordinatorDelegate: class{
-	func beginSearch()
+	func presentView()
 }
 
 class JourneyMapViewCoordinator: Coordinator{
@@ -33,7 +33,7 @@ class JourneyMapViewCoordinator: Coordinator{
 
 
 extension JourneyMapViewCoordinator: JourneyMapViewCoordinatorDelegate{
-	func beginSearch() {
+	func presentView() {
 		searchplacesCoordinator = SearchForPlacesCoordinator(viewmodel: self.model)
 		//searchplacesCoordinator.init
 	   	let searchView = searchplacesCoordinator.start()
