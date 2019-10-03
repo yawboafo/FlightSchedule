@@ -32,14 +32,17 @@ final class APIRequestExecuter {
 					return completionHandler(.success(value))
 				}
 				catch let error {
+					print(error)
 					return completionHandler(.failure(.failDecode(data,error)))
 				}
 			case 400 :
-		  	return completionHandler(.failure(.statusCode(httpResponse.statusCode)))
+		  	return completionHandler(.failure(.processionError(data)))
+				case 401 :
+		   return completionHandler(.failure(.notAuthorized))
 			case 403:
 				return completionHandler(.failure(.statusCode(httpResponse.statusCode)))
 			case 404:
-				return completionHandler(.failure(.statusCode(httpResponse.statusCode)))
+				return completionHandler(.failure(.processionError(data)))
 			case 500:
 				return completionHandler(.failure(.statusCode(httpResponse.statusCode)))
 			default:
