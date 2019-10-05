@@ -10,7 +10,7 @@ Get Flight schedule using Lufthansa developer API
 * RxBlocking
 * RxTest 
 
-## Future Improvement's
+## Future Frameworks's
 * Add Markers to Polylin Points
 
 
