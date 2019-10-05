@@ -22,7 +22,7 @@ Instead of using Mapkit places to get the airports, i have included  a json file
 
 https://github.com/jbrooksuk/JSON-Airports
 
-## Sreens
+## Screens
 
 <img width="432" alt="Screenshot 2019-10-05 at 12 09 32 PM" src="https://user-images.githubusercontent.com/2845362/66254801-0ef58880-e76b-11e9-939f-b4c02e41c4c9.png">
 <img width="432" alt="Screenshot 2019-10-05 at 12 09 50 PM" src="https://user-images.githubusercontent.com/2845362/66254800-0e5cf200-e76b-11e9-9c3d-43f648f62602.png">
