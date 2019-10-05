@@ -42,7 +42,7 @@
 		48213A2D2345F1E8001A4420 /* FlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213A2C2345F1E8001A4420 /* FlightModel.swift */; };
 		48213A2F2345F24C001A4420 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213A282345EDBF001A4420 /* ScheduleModel.swift */; };
 		48213A302345F24C001A4420 /* IATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213A2A2345EDBF001A4420 /* IATA.swift */; };
-		48213A312345F24C001A4420 /* AddressStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213A292345EDBF001A4420 /* AddressStation.swift */; };
+		48213A312345F24C001A4420 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213A292345EDBF001A4420 /* Station.swift */; };
 		48441D7F2348A4AA000FE352 /* FlightScheduleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441D7E2348A4AA000FE352 /* FlightScheduleViewModelTests.swift */; };
 		48441DCB2348CD57000FE352 /* FloatingSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC42348CD57000FE352 /* FloatingSearchBar.swift */; };
 		48441DCC2348CD57000FE352 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC52348CD57000FE352 /* Extensions.swift */; };
@@ -155,7 +155,7 @@
 		482139E02345EABB001A4420 /* OperatingCarrierAirlineID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatingCarrierAirlineID.swift; sourceTree = "<group>"; };
 		482139F92345EAF2001A4420 /* ScheduleAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleAPIResponse.swift; sourceTree = "<group>"; };
 		48213A282345EDBF001A4420 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
-		48213A292345EDBF001A4420 /* AddressStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressStation.swift; sourceTree = "<group>"; };
+		48213A292345EDBF001A4420 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		48213A2A2345EDBF001A4420 /* IATA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IATA.swift; sourceTree = "<group>"; };
 		48213A2C2345F1E8001A4420 /* FlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightModel.swift; sourceTree = "<group>"; };
 		48441D7E2348A4AA000FE352 /* FlightScheduleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightScheduleViewModelTests.swift; sourceTree = "<group>"; };
@@ -384,7 +384,7 @@
 			children = (
 				48213A282345EDBF001A4420 /* ScheduleModel.swift */,
 				48213A2A2345EDBF001A4420 /* IATA.swift */,
-				48213A292345EDBF001A4420 /* AddressStation.swift */,
+				48213A292345EDBF001A4420 /* Station.swift */,
 				48213A2C2345F1E8001A4420 /* FlightModel.swift */,
 			);
 			path = ComponentsModels;
@@ -519,7 +519,7 @@
 			isa = PBXGroup;
 			children = (
 				4894AF0A2342C30600754E50 /* HTTP */,
-				48D5BECE234259F90023C387 /* Models */,
+				48D5BECE234259F90023C387 /* AppModels */,
 				48D5BECA2342453B0023C387 /* Helpers */,
 				48A0DEB023422EE3004B1369 /* Components */,
 				48A0DEA823422C5E004B1369 /* Coordinators */,
@@ -633,13 +633,13 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		48D5BECE234259F90023C387 /* Models */ = {
+		48D5BECE234259F90023C387 /* AppModels */ = {
 			isa = PBXGroup;
 			children = (
 				4821399A2345EA02001A4420 /* APIResponseModels */,
 				48D5BECF23425A110023C387 /* APIRequestModels */,
 			);
-			path = Models;
+			path = AppModels;
 			sourceTree = "<group>";
 		};
 		48D5BECF23425A110023C387 /* APIRequestModels */ = {
@@ -912,7 +912,7 @@
 				48441DCF2348CD57000FE352 /* DatePickerDialog.swift in Sources */,
 				48213A2F2345F24C001A4420 /* ScheduleModel.swift in Sources */,
 				48213A302345F24C001A4420 /* IATA.swift in Sources */,
-				48213A312345F24C001A4420 /* AddressStation.swift in Sources */,
+				48213A312345F24C001A4420 /* Station.swift in Sources */,
 				482139F02345EABB001A4420 /* Stops.swift in Sources */,
 				482139F12345EABB001A4420 /* OperatingCarrier.swift in Sources */,
 				48A0DEAB23422CA0004B1369 /* AppCoordinator.swift in Sources */,
