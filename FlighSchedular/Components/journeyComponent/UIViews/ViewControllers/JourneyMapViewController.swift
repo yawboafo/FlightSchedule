@@ -34,13 +34,13 @@ class JourneyMapViewController: UIViewController {
 	
 
 	func buildMap(){
-		let annotations = viewModel.mkAnnotations()
-		mapView.showAnnotations(annotations, animated: true)
+		
 		let polyline = viewModel.getpolyLine()
 		mapView.setVisibleMapRect(polyline.boundingMapRect,
-												 edgePadding: UIEdgeInsets(top: 40.0, left: 40.0, bottom: 40.0, right: 40.0),
-												 animated: false)
+										  edgePadding: UIEdgeInsets(top: 50.0, left: 50.0, bottom: 50.0, right: 50.0),
+										  animated: true)
 		mapView.addOverlay(viewModel.getpolyLine())
+		mapView.showAnnotations(viewModel.mkAnnotations(), animated: true)
 		
 	}
 	
@@ -52,6 +52,7 @@ class JourneyMapViewController: UIViewController {
 			map.isScrollEnabled = true
 			map.showsCompass = true
 			map.delegate = self
+			
 		   map.register(LocationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
 			return map
 		}()

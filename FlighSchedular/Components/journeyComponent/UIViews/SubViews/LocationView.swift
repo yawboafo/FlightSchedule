@@ -12,7 +12,7 @@ class LocationView: MKMarkerAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {
             if let _ = newValue as? Station {
-					self.displayPriority = .defaultHigh
+					self.displayPriority = .defaultLow
             }
         }
     }
