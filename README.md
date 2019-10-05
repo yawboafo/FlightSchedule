@@ -14,6 +14,8 @@ And connect them with a polyline.
 
 ## Future Improvement
 * Use a more intuitive UI.
+* Use SwiftUI
+* Use Combine instead of Rxswift
 
 ## Airpot Codes
 Instead of using Mapkit places to get the airports, i have included  a json file containing all airports with its IATA (was previously named code) , to help me get more details on Airports. 
