@@ -52,7 +52,6 @@ class LabelList: UIView,BaseSubViewProtocol {
 		view.numberOfLines = 0
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.font = .systemFont(ofSize: 14, weight: .regular)
-
 		return view
 	}()
 	
@@ -62,7 +61,6 @@ class LabelList: UIView,BaseSubViewProtocol {
 		view.numberOfLines = 0
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.font = .systemFont(ofSize: 14, weight: .bold)
-
 		return view
 	}()
 	

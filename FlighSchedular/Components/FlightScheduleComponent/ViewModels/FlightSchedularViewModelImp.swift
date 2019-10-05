@@ -191,26 +191,12 @@ class FlightSchedularViewModelImp : FlightSchedularViewModel{
 	func getpolyLine()->MKPolyline{
 		return locationService.getMKPolyline(annotations: annotationsForMap())
 	}
-	//(latitude: 50.901401519800004, longitude: 4.48443984985)
+	
 	func mkAnnotations() -> [MKAnnotation]{
-		/**return annotationsForMap().compactMap{ args in
-			let arrayofAnnotation : [MKAnnotation]  = [args.departure,args.arrival]
-			//print(arrayofAnnotation,args.departure.coordinate,args.arrival.coordinate)
-			return arrayofAnnotation as?  MKAnnotation
-		}**/
 		var annotations = [MKAnnotation]()
 		annotationsForMap().forEach{ args in
-			annotations.append(contentsOf: [args.arrival,args.departure])
-			
+		annotations.append(contentsOf: [args.arrival,args.departure])
 		}
-
-		
-		
-		
-	/**	let c = Station(latitude:  50.901401519800004,
-									  longitude: 4.48443984985, title: "Taifa",subtitle: "Toho")
-	 
-		return [c]**/
 		return annotations
 	}
 	

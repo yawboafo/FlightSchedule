@@ -59,7 +59,7 @@ class SearchPlaceSubView: UIView,BaseSubViewProtocol {
 		let tableview = UITableView(frame: .zero)
 		tableview.separatorStyle = .none
 		tableview.translatesAutoresizingMaskIntoConstraints = false
-		tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+		tableview.register(UITableViewCell.self, forCellReuseIdentifier: "subtitleCell")
 		tableview.keyboardDismissMode = .onDrag
 		return tableview
 	}()
@@ -81,12 +81,12 @@ class SearchPlaceSubView: UIView,BaseSubViewProtocol {
 		fatalError("init(coder:) has not been implemented")
 	}
    func setUpSubViews() {
-	     translatesAutoresizingMaskIntoConstraints = false
-	     addSubview(floatingSearchBox)
-	     addSubview(switcher)
-	     addSubview(searchButton)
-	     addSubview(searchResultsTableView)
-		
+	     
+	  translatesAutoresizingMaskIntoConstraints = false
+	  addSubview(floatingSearchBox)
+	  addSubview(switcher)
+	  addSubview(searchButton)
+	  addSubview(searchResultsTableView)
 	  stack.addArrangedSubview(directFlightLabel)
      stack.addArrangedSubview(switcher)
      addSubview(stack)
@@ -133,8 +133,7 @@ class SearchPlaceSubView: UIView,BaseSubViewProtocol {
 			.disposed(by: disposeBag)
 		
 		model.searchResults?.bind(to: searchResultsTableView
-			.rx.items(cellIdentifier: "cell")) { row, searchResult, cell in
-			//	print(searchResult.title,searchResult.subtitle)
+			.rx.items(cellIdentifier: "subtitleCell")) { row, searchResult, cell in
 				cell.textLabel?.text = searchResult.name
 				cell.detailTextLabel?.text = searchResult.iata
 			 }.disposed(by: disposeBag)

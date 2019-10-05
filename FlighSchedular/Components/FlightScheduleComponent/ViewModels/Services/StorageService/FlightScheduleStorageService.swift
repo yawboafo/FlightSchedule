@@ -20,7 +20,6 @@ class FlightScheduleStorageService {
 		get { return try? IATAlocal() }
 	}
 	
-	
   func IATAlocal() throws -> Iata?{
 	   let fileName = "ITTACodes"
 	   guard let filePath = mainBundle.path(forResource: "IATA.bundle/\(fileName)", ofType: ".json") else { throw DataCacheError.unknownPath }
