@@ -20,8 +20,8 @@ struct APIEndPoint {
 	
 	
 	static func buildStringURL(base:String = baseURL,
-														 urlPaths:[URLPath] = [],
-														 otherPaths:[String] = []) -> String?{
+										urlPaths:[URLPath] = [],
+										otherPaths:[String] = []) -> String?{
 		let endpoint: String = base
 		let path = urlPaths.compactMap{ args in args.rawValue }.joined()
 		let otherPath  = otherPaths.joined(separator: "/")
