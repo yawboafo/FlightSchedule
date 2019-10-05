@@ -141,13 +141,14 @@ class FlightSchedularLocationService:FlightSchedularLocationServiceProtocol {
 		var annotations : [(arrival:MKAnnotation,departure:MKAnnotation)] = []
 		for item in elements{
 			let flightModule = viewModel.getFlightModule(element: item)
+			
 			guard let arriveAnotation = (flightModule?.arrivalIATA.getAnnotation) else { continue }
-			arriveAnotation.title = flightModule?.arrivalAirport
-			arriveAnotation.subtitle = flightModule?.arrivalTime
+			//arriveAnotation.title = flightModule?.arrivalAirport
+			//arriveAnotation.subtitle = flightModule?.arrivalTime
 			
 			guard let destinationAnotation = (flightModule?.departtureIATA.getAnnotation) else { continue }
-			destinationAnotation.title = flightModule?.departAirport
-			destinationAnotation.subtitle = flightModule?.departTime
+			//destinationAnotation.title = flightModule?.departAirport
+			//destinationAnotation.subtitle = flightModule?.departTime
 			annotations.append((arrival:arriveAnotation,departure:destinationAnotation))
 		}
 		 return annotations

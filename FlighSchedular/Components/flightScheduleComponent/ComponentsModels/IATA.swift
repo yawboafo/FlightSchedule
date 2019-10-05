@@ -41,7 +41,7 @@ extension IATA {
 	
 	var getAnnotation : Station{
 		
-		return Station(latitude: Double(latitude) ?? 0.00, longitude: Double(longitude) ?? 0.00)
+		return Station(latitude: Double(latitude) ?? 0.00, longitude: Double(longitude) ?? 0.00, title: name,subtitle: country)
 	}
 }
 
@@ -56,9 +56,11 @@ class Station :NSObject, MKAnnotation{
 		 return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
 	}
 	
-	init(latitude: Double, longitude: Double) {
+	init(latitude: Double, longitude: Double,title:String,subtitle:String) {
 		 self.latitude = latitude
 		 self.longitude = longitude
+		 self.title  = title
+		 self.subtitle = subtitle
 	}
 	
 	

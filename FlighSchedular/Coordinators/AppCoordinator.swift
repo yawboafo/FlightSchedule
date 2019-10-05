@@ -19,8 +19,6 @@ final class AppCoordinator : BaseCoordinator{
     var journeyCoordinator : JourneyMapViewCoordinator!
 	 var searchplacesCoordinator : SearchForPlacesCoordinator!
 
-	
-	
 	func start() -> UIViewController {
 		       
 		        searchplacesCoordinator = SearchForPlacesCoordinator(viewmodel: self.model)

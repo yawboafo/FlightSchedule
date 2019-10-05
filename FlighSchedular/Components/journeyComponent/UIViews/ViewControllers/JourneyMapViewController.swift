@@ -8,7 +8,6 @@
 
 import UIKit
 import MapKit
-//import FloatingUIViews
 import  RxCocoa
 import RxSwift
 
@@ -19,17 +18,14 @@ class JourneyMapViewController: UIViewController {
 	override func viewDidLoad() {
 		  super.viewDidLoad()
 		  self.view.backgroundColor = .white
-		  mapView.delegate = self
 	 }
 	
 	override func viewWillAppear(_ animated: Bool) {
 		self.navigationController?.navigationBar.isHidden = true
-		
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
 		buildMap()
-
 	}
 	
 	override func viewWillDisappear(_ animated: Bool) {
@@ -38,15 +34,13 @@ class JourneyMapViewController: UIViewController {
 	
 
 	func buildMap(){
-
-		  mapView.showAnnotations(viewModel.mkAnnotations(), animated: true)
-		  let polyline = viewModel.getpolyLine()
-		
-		   self.mapView.setVisibleMapRect(polyline.boundingMapRect,
-												    edgePadding: UIEdgeInsets(top: 40.0, left: 40.0, bottom: 40.0, right: 40.0),
-												    animated: false)
-		   mapView.addOverlay(viewModel.getpolyLine())
-		
+		let annotations = viewModel.mkAnnotations()
+		mapView.showAnnotations(annotations, animated: true)
+		let polyline = viewModel.getpolyLine()
+		mapView.setVisibleMapRect(polyline.boundingMapRect,
+												 edgePadding: UIEdgeInsets(top: 40.0, left: 40.0, bottom: 40.0, right: 40.0),
+												 animated: false)
+		mapView.addOverlay(viewModel.getpolyLine())
 		
 	}
 	
@@ -57,16 +51,19 @@ class JourneyMapViewController: UIViewController {
 			map.isZoomEnabled = true
 			map.isScrollEnabled = true
 			map.showsCompass = true
+			map.delegate = self
+		   map.register(LocationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
 			return map
 		}()
 		
-		lazy var navBack: FloatingSearchBar = {
-			let searchBar = FloatingSearchBar(delegate: self)
-			searchBar.menuButton.setImage(#imageLiteral(resourceName: "back"), for: .normal)
-			searchBar.translatesAutoresizingMaskIntoConstraints = false
-			return searchBar
+		lazy var navBack: FloatingNavButton = {
+			let button = FloatingNavButton(delegate: self)
+			button.menuButton.setImage(#imageLiteral(resourceName: "back"), for: .normal)
+			button.translatesAutoresizingMaskIntoConstraints = false
+			return button
 		}()
 		
+	
 		override func viewWillLayoutSubviews() {
 		   view.addSubview(mapView)
 			mapView.constrainToSuperView(on: view)
@@ -76,13 +73,11 @@ class JourneyMapViewController: UIViewController {
 			
 		}
 	
-	
 }
 
 extension JourneyMapViewController: FloatingSearchBarDelegate{
 	func barClicked() {
 		self.navigationController?.popViewController(animated: true)
-
 	}
 }
 
@@ -96,10 +91,6 @@ extension JourneyMapViewController:MKMapViewDelegate{
 		 }
 		 return polylineRenderer
 	}
-	
-	
-
- 
 	
 }
 

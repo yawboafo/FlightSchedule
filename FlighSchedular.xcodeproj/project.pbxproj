@@ -52,6 +52,7 @@
 		48441DD92348CD9A000FE352 /* FloatingUIViews.h in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48441DC72348CD57000FE352 /* FloatingUIViews.h */; };
 		48795B8F23435B630067A0C8 /* FlightSchedulesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48795B8E23435B630067A0C8 /* FlightSchedulesCoordinator.swift */; };
 		48795B9223435BF10067A0C8 /* FlightSchedulesSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48795B9123435BF00067A0C8 /* FlightSchedulesSubView.swift */; };
+		487FA6DD2348DC8500ADFDA5 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FA6DC2348DC8500ADFDA5 /* LocationView.swift */; };
 		488515E72342ACED006FA161 /* IATA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 488515E62342ACED006FA161 /* IATA.bundle */; };
 		4894AF102342C30600754E50 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF0B2342C30600754E50 /* APIError.swift */; };
 		4894AF112342C30600754E50 /* APIRequestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF0C2342C30600754E50 /* APIRequestConstants.swift */; };
@@ -172,6 +173,7 @@
 		48441DD82348CD81000FE352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48795B8E23435B630067A0C8 /* FlightSchedulesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedulesCoordinator.swift; sourceTree = "<group>"; };
 		48795B9123435BF00067A0C8 /* FlightSchedulesSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedulesSubView.swift; sourceTree = "<group>"; };
+		487FA6DC2348DC8500ADFDA5 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		488515E62342ACED006FA161 /* IATA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IATA.bundle; sourceTree = "<group>"; };
 		4894AF0B2342C30600754E50 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		4894AF0C2342C30600754E50 /* APIRequestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestConstants.swift; sourceTree = "<group>"; };
@@ -408,6 +410,7 @@
 		48441D822348C82A000FE352 /* UIViews */ = {
 			isa = PBXGroup;
 			children = (
+				487FA6DB2348DC7100ADFDA5 /* SubViews */,
 				48213A032345ECD0001A4420 /* ViewControllers */,
 			);
 			path = UIViews;
@@ -438,6 +441,14 @@
 				48441DD82348CD81000FE352 /* Info.plist */,
 			);
 			path = FloatingUIViews;
+			sourceTree = "<group>";
+		};
+		487FA6DB2348DC7100ADFDA5 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				487FA6DC2348DC8500ADFDA5 /* LocationView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		4894AF0A2342C30600754E50 /* HTTP */ = {
@@ -958,6 +969,7 @@
 				482139F62345EABB001A4420 /* OperatingCarrierAirlineID.swift in Sources */,
 				4898A252234648440041108F /* LabelList.swift in Sources */,
 				4894AF2023433DA300754E50 /* FlightScheduleAPIService.swift in Sources */,
+				487FA6DD2348DC8500ADFDA5 /* LocationView.swift in Sources */,
 				4894AF142342C30600754E50 /* APIRequest.swift in Sources */,
 				482139E72345EABB001A4420 /* Details.swift in Sources */,
 			);
