@@ -1,5 +1,7 @@
 # FlightSchedule
-Get Flight schedule using Lufthansa developer API
+Get Flight schedule using Lufthansa developer API,
+Showing the origin and destination of the flight on a map upon selection of a schedule
+And connect them with a polyline.
 
 ## Architecture 
 1. MVVM - C
@@ -13,6 +15,8 @@ Get Flight schedule using Lufthansa developer API
 ## Future Improvement
 * Add Markers to Polylin Points
 
+## Airpot Codes
+https://github.com/jbrooksuk/JSON-Airports
 
 ## Sreens
 
