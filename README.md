@@ -13,6 +13,7 @@ And connect them with a polyline.
 * RxTest 
 
 ## Future Improvement
+* Reduce memory spikes
 * Use a more intuitive UI.
 * Use SwiftUI
 * Use Combine instead of Rxswift
