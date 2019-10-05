@@ -53,6 +53,7 @@
 		48795B8F23435B630067A0C8 /* FlightSchedulesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48795B8E23435B630067A0C8 /* FlightSchedulesCoordinator.swift */; };
 		48795B9223435BF10067A0C8 /* FlightSchedulesSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48795B9123435BF00067A0C8 /* FlightSchedulesSubView.swift */; };
 		487FA6DD2348DC8500ADFDA5 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FA6DC2348DC8500ADFDA5 /* LocationView.swift */; };
+		487FA6DF2348E6D500ADFDA5 /* FlightLocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FA6DE2348E6D500ADFDA5 /* FlightLocationServiceTests.swift */; };
 		488515E72342ACED006FA161 /* IATA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 488515E62342ACED006FA161 /* IATA.bundle */; };
 		4894AF102342C30600754E50 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF0B2342C30600754E50 /* APIError.swift */; };
 		4894AF112342C30600754E50 /* APIRequestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894AF0C2342C30600754E50 /* APIRequestConstants.swift */; };
@@ -174,6 +175,7 @@
 		48795B8E23435B630067A0C8 /* FlightSchedulesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedulesCoordinator.swift; sourceTree = "<group>"; };
 		48795B9123435BF00067A0C8 /* FlightSchedulesSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedulesSubView.swift; sourceTree = "<group>"; };
 		487FA6DC2348DC8500ADFDA5 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		487FA6DE2348E6D500ADFDA5 /* FlightLocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLocationServiceTests.swift; sourceTree = "<group>"; };
 		488515E62342ACED006FA161 /* IATA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IATA.bundle; sourceTree = "<group>"; };
 		4894AF0B2342C30600754E50 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		4894AF0C2342C30600754E50 /* APIRequestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestConstants.swift; sourceTree = "<group>"; };
@@ -546,6 +548,7 @@
 				48A0DE8F23422C4D004B1369 /* FlighSchedularTests.swift */,
 				48A0DE9123422C4D004B1369 /* Info.plist */,
 				48441D7E2348A4AA000FE352 /* FlightScheduleViewModelTests.swift */,
+				487FA6DE2348E6D500ADFDA5 /* FlightLocationServiceTests.swift */,
 			);
 			path = FlighSchedularTests;
 			sourceTree = "<group>";
@@ -981,6 +984,7 @@
 			files = (
 				48A0DE9023422C4D004B1369 /* FlighSchedularTests.swift in Sources */,
 				48441D7F2348A4AA000FE352 /* FlightScheduleViewModelTests.swift in Sources */,
+				487FA6DF2348E6D500ADFDA5 /* FlightLocationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

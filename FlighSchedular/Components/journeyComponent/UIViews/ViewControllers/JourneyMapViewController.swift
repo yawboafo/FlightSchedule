@@ -14,6 +14,26 @@ import RxSwift
 class JourneyMapViewController: UIViewController {
 
 	var viewModel : FlightSchedularViewModel!
+	lazy var mapView: MKMapView = {
+		let map = MKMapView()
+		map.translatesAutoresizingMaskIntoConstraints = false
+		map.mapType = MKMapType.standard
+		map.isZoomEnabled = true
+		map.isScrollEnabled = true
+		map.showsCompass = true
+		map.delegate = self
+		
+		map.register(LocationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+		return map
+	}()
+	
+	lazy var navBack: FloatingNavButton = {
+		let button = FloatingNavButton(delegate: self)
+		button.menuButton.setImage(#imageLiteral(resourceName: "back"), for: .normal)
+		button.translatesAutoresizingMaskIntoConstraints = false
+		return button
+	}()
+	
 	
 	override func viewDidLoad() {
 		  super.viewDidLoad()
@@ -32,47 +52,25 @@ class JourneyMapViewController: UIViewController {
 		self.navigationController?.navigationBar.isHidden = false
 	}
 	
+	override func viewWillLayoutSubviews() {
+		  view.addSubview(mapView)
+		  mapView.constrainToSuperView(on: view)
+		  mapView.addSubview(navBack)
+		  navBack.pintoTop(superview: mapView.safeAreaLayoutGuide.topAnchor,space: 20)
+		  navBack.pintoLeft(superview: mapView,space: 20)
+		  
+	 }
 
 	func buildMap(){
-		
-		let polyline = viewModel.getpolyLine()
-		mapView.setVisibleMapRect(polyline.boundingMapRect,
-										  edgePadding: UIEdgeInsets(top: 50.0, left: 50.0, bottom: 50.0, right: 50.0),
-										  animated: true)
-		mapView.addOverlay(viewModel.getpolyLine())
-		mapView.showAnnotations(viewModel.mkAnnotations(), animated: true)
-		
+	  
+	  let polyline = viewModel.getpolyLine()
+	  mapView.setVisibleMapRect(polyline.boundingMapRect,
+										 edgePadding: UIEdgeInsets(top: 50.0, left: 50.0, bottom: 50.0, right: 50.0),
+										 animated: true)
+	  mapView.addOverlay(viewModel.getpolyLine())
+	  mapView.showAnnotations(viewModel.mkAnnotations(), animated: true)
+	  
 	}
-	
-		lazy var mapView: MKMapView = {
-			let map = MKMapView()
-			map.translatesAutoresizingMaskIntoConstraints = false
-			map.mapType = MKMapType.standard
-			map.isZoomEnabled = true
-			map.isScrollEnabled = true
-			map.showsCompass = true
-			map.delegate = self
-			
-		   map.register(LocationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-			return map
-		}()
-		
-		lazy var navBack: FloatingNavButton = {
-			let button = FloatingNavButton(delegate: self)
-			button.menuButton.setImage(#imageLiteral(resourceName: "back"), for: .normal)
-			button.translatesAutoresizingMaskIntoConstraints = false
-			return button
-		}()
-		
-	
-		override func viewWillLayoutSubviews() {
-		   view.addSubview(mapView)
-			mapView.constrainToSuperView(on: view)
-			mapView.addSubview(navBack)
-		   navBack.pintoTop(superview: mapView.safeAreaLayoutGuide.topAnchor,space: 20)
-			navBack.pintoLeft(superview: mapView,space: 20)
-			
-		}
 	
 }
 
