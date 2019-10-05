@@ -16,6 +16,7 @@ And connect them with a polyline.
 * Add Markers to Polylin Points
 
 ## Airpot Codes
+Instead of using Mapkit places to get the airports, i have included in the project a json file containing all airports with its IATA (was previously named code) , to help me get more details on Airports. 
 https://github.com/jbrooksuk/JSON-Airports
 
 ## Sreens
