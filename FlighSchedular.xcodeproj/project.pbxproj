@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		136CE1050F0FA34C0FB1284C /* Pods_FlighSchedularUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86287CFBA4EFDDCE138FA15 /* Pods_FlighSchedularUITests.framework */; };
 		20554C9C2E7825A5DBBB4443 /* Pods_FlighSchedularTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF0B2D0976C107BE80AF7A2 /* Pods_FlighSchedularTests.framework */; };
-		481609C72343871600C387B4 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481609C62343871600C387B4 /* DatePickerDialog.swift */; };
 		481609C92343F7A700C387B4 /* ProcessingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481609C82343F7A700C387B4 /* ProcessingError.swift */; };
 		481609CB2344065F00C387B4 /* FlightScheduleTBVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481609CA2344065F00C387B4 /* FlightScheduleTBVCell.swift */; };
 		481609CF2344D5E000C387B4 /* FlightScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481609CE2344D5E000C387B4 /* FlightScheduleDetailViewController.swift */; };
@@ -45,6 +44,12 @@
 		48213A302345F24C001A4420 /* IATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213A2A2345EDBF001A4420 /* IATA.swift */; };
 		48213A312345F24C001A4420 /* AddressStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213A292345EDBF001A4420 /* AddressStation.swift */; };
 		48441D7F2348A4AA000FE352 /* FlightScheduleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441D7E2348A4AA000FE352 /* FlightScheduleViewModelTests.swift */; };
+		48441DCB2348CD57000FE352 /* FloatingSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC42348CD57000FE352 /* FloatingSearchBar.swift */; };
+		48441DCC2348CD57000FE352 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC52348CD57000FE352 /* Extensions.swift */; };
+		48441DCD2348CD57000FE352 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC62348CD57000FE352 /* ClickableView.swift */; };
+		48441DCE2348CD57000FE352 /* FloatingSearchBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC82348CD57000FE352 /* FloatingSearchBox.swift */; };
+		48441DCF2348CD57000FE352 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC92348CD57000FE352 /* DatePickerDialog.swift */; };
+		48441DD92348CD9A000FE352 /* FloatingUIViews.h in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48441DC72348CD57000FE352 /* FloatingUIViews.h */; };
 		48795B8F23435B630067A0C8 /* FlightSchedulesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48795B8E23435B630067A0C8 /* FlightSchedulesCoordinator.swift */; };
 		48795B9223435BF10067A0C8 /* FlightSchedulesSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48795B9123435BF00067A0C8 /* FlightSchedulesSubView.swift */; };
 		488515E72342ACED006FA161 /* IATA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 488515E62342ACED006FA161 /* IATA.bundle */; };
@@ -68,8 +73,6 @@
 		48A0DEAD23422CBD004B1369 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DEAC23422CBC004B1369 /* BaseCoordinator.swift */; };
 		48A0DEAF23422EAA004B1369 /* JourneyMapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DEAE23422EAA004B1369 /* JourneyMapViewCoordinator.swift */; };
 		48A0DEB223422F0B004B1369 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0DEB123422F0B004B1369 /* JourneyMapViewController.swift */; };
-		48CAF3FB2342348D0075BF29 /* FloatingUIViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CAF3FA234234880075BF29 /* FloatingUIViews.framework */; };
-		48CAF3FC2342348D0075BF29 /* FloatingUIViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48CAF3FA234234880075BF29 /* FloatingUIViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48CAF3FF2342380B0075BF29 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF3FE2342380B0075BF29 /* PlacesViewController.swift */; };
 		48CAF401234238250075BF29 /* SearchForPlacesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF400234238250075BF29 /* SearchForPlacesCoordinator.swift */; };
 		48CAF405234238BD0075BF29 /* SearchPlaceSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF404234238BD0075BF29 /* SearchPlaceSubView.swift */; };
@@ -101,32 +104,24 @@
 			remoteGlobalIDString = 48A0DE7423422C4B004B1369;
 			remoteInfo = FlighSchedular;
 		};
-		48CAF3F9234234880075BF29 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48CAF3EE234234880075BF29 /* FloatingUIViews.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 48A0DEBD234230B0004B1369;
-			remoteInfo = FloatingUIViews;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		48CAF3FD2342348D0075BF29 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 0;
 			files = (
-				48CAF3FC2342348D0075BF29 /* FloatingUIViews.framework in Embed Frameworks */,
+				48441DD92348CD9A000FE352 /* FloatingUIViews.h in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1EB2C49F7BA4FC1D6286E472 /* Pods-FlighSchedular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlighSchedular.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlighSchedular/Pods-FlighSchedular.release.xcconfig"; sourceTree = "<group>"; };
-		481609C62343871600C387B4 /* DatePickerDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		481609C82343F7A700C387B4 /* ProcessingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingError.swift; sourceTree = "<group>"; };
 		481609CA2344065F00C387B4 /* FlightScheduleTBVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightScheduleTBVCell.swift; sourceTree = "<group>"; };
 		481609CE2344D5E000C387B4 /* FlightScheduleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightScheduleDetailViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +157,19 @@
 		48213A2A2345EDBF001A4420 /* IATA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IATA.swift; sourceTree = "<group>"; };
 		48213A2C2345F1E8001A4420 /* FlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightModel.swift; sourceTree = "<group>"; };
 		48441D7E2348A4AA000FE352 /* FlightScheduleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightScheduleViewModelTests.swift; sourceTree = "<group>"; };
+		48441DC42348CD57000FE352 /* FloatingSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingSearchBar.swift; sourceTree = "<group>"; };
+		48441DC52348CD57000FE352 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		48441DC62348CD57000FE352 /* ClickableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
+		48441DC72348CD57000FE352 /* FloatingUIViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingUIViews.h; sourceTree = "<group>"; };
+		48441DC82348CD57000FE352 /* FloatingSearchBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingSearchBox.swift; sourceTree = "<group>"; };
+		48441DC92348CD57000FE352 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		48441DD22348CD81000FE352 /* FloatingSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSearchBar.swift; sourceTree = "<group>"; };
+		48441DD32348CD81000FE352 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		48441DD42348CD81000FE352 /* ClickableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
+		48441DD52348CD81000FE352 /* FloatingUIViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingUIViews.h; sourceTree = "<group>"; };
+		48441DD62348CD81000FE352 /* FloatingSearchBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSearchBox.swift; sourceTree = "<group>"; };
+		48441DD72348CD81000FE352 /* DatePickerDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		48441DD82348CD81000FE352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48795B8E23435B630067A0C8 /* FlightSchedulesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedulesCoordinator.swift; sourceTree = "<group>"; };
 		48795B9123435BF00067A0C8 /* FlightSchedulesSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSchedulesSubView.swift; sourceTree = "<group>"; };
 		488515E62342ACED006FA161 /* IATA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IATA.bundle; sourceTree = "<group>"; };
@@ -191,13 +199,6 @@
 		48A0DEAC23422CBC004B1369 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		48A0DEAE23422EAA004B1369 /* JourneyMapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewCoordinator.swift; sourceTree = "<group>"; };
 		48A0DEB123422F0B004B1369 /* JourneyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewController.swift; sourceTree = "<group>"; };
-		48CAF3EE234234880075BF29 /* FloatingUIViews.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FloatingUIViews.xcodeproj; sourceTree = "<group>"; };
-		48CAF3F2234234880075BF29 /* FloatingSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSearchBar.swift; sourceTree = "<group>"; };
-		48CAF3F3234234880075BF29 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		48CAF3F4234234880075BF29 /* ClickableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
-		48CAF3F5234234880075BF29 /* FloatingUIViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingUIViews.h; sourceTree = "<group>"; };
-		48CAF3F6234234880075BF29 /* FloatingSearchBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSearchBox.swift; sourceTree = "<group>"; };
-		48CAF3F7234234880075BF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CAF3FE2342380B0075BF29 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		48CAF400234238250075BF29 /* SearchForPlacesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForPlacesCoordinator.swift; sourceTree = "<group>"; };
 		48CAF404234238BD0075BF29 /* SearchPlaceSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceSubView.swift; sourceTree = "<group>"; };
@@ -226,7 +227,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48CAF3FB2342348D0075BF29 /* FloatingUIViews.framework in Frameworks */,
 				EBBB07471D18AD8C8A864D0E /* Pods_FlighSchedular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +413,33 @@
 			path = UIViews;
 			sourceTree = "<group>";
 		};
+		48441DC32348CD57000FE352 /* FloatingUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				48441DC42348CD57000FE352 /* FloatingSearchBar.swift */,
+				48441DC52348CD57000FE352 /* Extensions.swift */,
+				48441DC62348CD57000FE352 /* ClickableView.swift */,
+				48441DC72348CD57000FE352 /* FloatingUIViews.h */,
+				48441DC82348CD57000FE352 /* FloatingSearchBox.swift */,
+				48441DC92348CD57000FE352 /* DatePickerDialog.swift */,
+			);
+			path = FloatingUIViews;
+			sourceTree = "<group>";
+		};
+		48441DD12348CD81000FE352 /* FloatingUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				48441DD22348CD81000FE352 /* FloatingSearchBar.swift */,
+				48441DD32348CD81000FE352 /* Extensions.swift */,
+				48441DD42348CD81000FE352 /* ClickableView.swift */,
+				48441DD52348CD81000FE352 /* FloatingUIViews.h */,
+				48441DD62348CD81000FE352 /* FloatingSearchBox.swift */,
+				48441DD72348CD81000FE352 /* DatePickerDialog.swift */,
+				48441DD82348CD81000FE352 /* Info.plist */,
+			);
+			path = FloatingUIViews;
+			sourceTree = "<group>";
+		};
 		4894AF0A2342C30600754E50 /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +482,7 @@
 		48A0DE6C23422C4B004B1369 = {
 			isa = PBXGroup;
 			children = (
+				48441DC32348CD57000FE352 /* FloatingUIViews */,
 				48A0DE7723422C4B004B1369 /* FlighSchedular */,
 				48A0DE8E23422C4D004B1369 /* FlighSchedularTests */,
 				48A0DE9923422C4D004B1369 /* FlighSchedularUITests */,
@@ -543,44 +571,12 @@
 		48A0DEE8234232AE004B1369 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48CAF3ED234234880075BF29 /* FloatingUIViews */,
+				48441DD12348CD81000FE352 /* FloatingUIViews */,
 				6C861C699E77B8A7118234F4 /* Pods_FlighSchedular.framework */,
 				BAF0B2D0976C107BE80AF7A2 /* Pods_FlighSchedularTests.framework */,
 				C86287CFBA4EFDDCE138FA15 /* Pods_FlighSchedularUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		48CAF3ED234234880075BF29 /* FloatingUIViews */ = {
-			isa = PBXGroup;
-			children = (
-				48CAF3EE234234880075BF29 /* FloatingUIViews.xcodeproj */,
-				48CAF3F1234234880075BF29 /* FloatingUIViews */,
-			);
-			name = FloatingUIViews;
-			path = ../FloatingUIViews;
-			sourceTree = "<group>";
-		};
-		48CAF3EF234234880075BF29 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				48CAF3FA234234880075BF29 /* FloatingUIViews.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		48CAF3F1234234880075BF29 /* FloatingUIViews */ = {
-			isa = PBXGroup;
-			children = (
-				48CAF3F2234234880075BF29 /* FloatingSearchBar.swift */,
-				48CAF3F3234234880075BF29 /* Extensions.swift */,
-				48CAF3F4234234880075BF29 /* ClickableView.swift */,
-				48CAF3F5234234880075BF29 /* FloatingUIViews.h */,
-				48CAF3F6234234880075BF29 /* FloatingSearchBox.swift */,
-				48CAF3F7234234880075BF29 /* Info.plist */,
-				481609C62343871600C387B4 /* DatePickerDialog.swift */,
-			);
-			path = FloatingUIViews;
 			sourceTree = "<group>";
 		};
 		48CAF402234238970075BF29 /* BaseSubView */ = {
@@ -752,12 +748,6 @@
 			mainGroup = 48A0DE6C23422C4B004B1369;
 			productRefGroup = 48A0DE7623422C4B004B1369 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 48CAF3EF234234880075BF29 /* Products */;
-					ProjectRef = 48CAF3EE234234880075BF29 /* FloatingUIViews.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				48A0DE7423422C4B004B1369 /* FlighSchedular */,
@@ -766,16 +756,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		48CAF3FA234234880075BF29 /* FloatingUIViews.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FloatingUIViews.framework;
-			remoteRef = 48CAF3F9234234880075BF29 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		48A0DE7323422C4B004B1369 /* Resources */ = {
@@ -911,6 +891,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48441DCB2348CD57000FE352 /* FloatingSearchBar.swift in Sources */,
+				48441DCC2348CD57000FE352 /* Extensions.swift in Sources */,
+				48441DCD2348CD57000FE352 /* ClickableView.swift in Sources */,
+				48441DCE2348CD57000FE352 /* FloatingSearchBox.swift in Sources */,
+				48441DCF2348CD57000FE352 /* DatePickerDialog.swift in Sources */,
 				48213A2F2345F24C001A4420 /* ScheduleModel.swift in Sources */,
 				48213A302345F24C001A4420 /* IATA.swift in Sources */,
 				48213A312345F24C001A4420 /* AddressStation.swift in Sources */,
@@ -957,7 +942,6 @@
 				482139EA2345EABB001A4420 /* FlightElement.swift in Sources */,
 				481609CB2344065F00C387B4 /* FlightScheduleTBVCell.swift in Sources */,
 				4894AF102342C30600754E50 /* APIError.swift in Sources */,
-				481609C72343871600C387B4 /* DatePickerDialog.swift in Sources */,
 				48D5BEFC23425C4A0023C387 /* Helper.swift in Sources */,
 				481609D32344D8D600C387B4 /* BaseSubViewProtocol.swift in Sources */,
 				48D5BEFB23425C4A0023C387 /* General+Extensions.swift in Sources */,

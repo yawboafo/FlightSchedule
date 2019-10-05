@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FloatingUIViews
+//import FloatingUIViews
 import RxCocoa
 import RxSwift
 import MapKit
