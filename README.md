@@ -1,18 +1,24 @@
 # FlightSchedule
-Get Flight schedule using Lufthansa developer API
+Get Flight schedule using Lufthansa developer API,
+Showing the origin and destination of the flight on a map upon selection of a schedule
+And connect them with a polyline.
 
 ## Architecture 
 1. MVVM - C
 
-## External Resources
+## External Frameworks's
 * RXswift
 * RxCocoa
 * RxBlocking
 * RxTest 
 
-## Future Improvement's
+## Future Improvement
 * Add Markers to Polylin Points
 
+## Airpot Codes
+Instead of using Mapkit places to get the airports, i have included  a json file containing all airports with its IATA (was previously named code) , to help me get more details on Airports. 
+
+https://github.com/jbrooksuk/JSON-Airports
 
 ## Sreens
 
@@ -22,3 +28,5 @@ Get Flight schedule using Lufthansa developer API
 <img width="432" alt="Screenshot 2019-10-05 at 12 08 30 PM" src="https://user-images.githubusercontent.com/2845362/66254802-0ef58880-e76b-11e9-9e41-3c254dff3af0.png">
 <img width="432" alt="Screenshot 2019-10-05 at 12 08 20 PM" src="https://user-images.githubusercontent.com/2845362/66254803-0ef58880-e76b-11e9-905d-f50071ecd88e.png">
 <img width="432" alt="Screenshot 2019-10-05 at 12 25 07 PM" src="https://user-images.githubusercontent.com/2845362/66254817-32203800-e76b-11e9-8449-f6f929f38471.png">
+<img width="432" alt="Screenshot 2019-10-05 at 2 22 53 PM" src="https://user-images.githubusercontent.com/2845362/66256271-bf6b8880-e77b-11e9-85ca-f85a128f2487.png">
+
