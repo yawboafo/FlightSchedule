@@ -30,7 +30,7 @@ class FlightSchedulesSubView: UIView,BaseSubViewProtocol {
 		setUpSubViews()
 		
 	}
-  init(frame: CGRect = .zero,model: FlightSchedularViewModelImp) {
+   init(frame: CGRect = .zero,model: FlightSchedularViewModelImp) {
 	 super.init(frame: frame)
 	 self.viewModel = model
 	 setUpSubViews()

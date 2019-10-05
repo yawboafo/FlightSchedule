@@ -14,9 +14,7 @@ class PlacesViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		 self.view.backgroundColor = .white
-		self.title = "Get Flight Schedules"
-		 //self.navigationItem.setLeftBarButton(UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(closeView)), animated: true)
-
+		 self.title = "Get Flight Schedules"
 	}
 	
 	@objc func closeView(){

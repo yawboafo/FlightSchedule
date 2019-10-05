@@ -13,11 +13,10 @@ import RxCocoa
 
 class FlightSchedularViewModelImp : FlightSchedularViewModel{
 	
-	
-	
-	
-	
 	var scheduleCoordinatorDelegate: FlightSchedulesCoordinatorProtocol?
+	var coordinatorDelegate: JourneyMapViewCoordinatorDelegate?
+	var placesCoordinatorDelegate : SearchForPlacesCoordinatorDelegate?
+	
 	var storageService: FlightScheduleStorageService
 	var apiService: FlightScheduleAPIServiceImpl
 	var locationService: FlightSchedularLocationService
@@ -25,13 +24,11 @@ class FlightSchedularViewModelImp : FlightSchedularViewModel{
 	
 	var disposeBag: DisposeBag?
 	var searchResults: BehaviorRelay<[IATA]>?
-	var coordinatorDelegate: JourneyMapViewCoordinatorDelegate?
-	var placesCoordinatorDelegate : SearchForPlacesCoordinatorDelegate?
 	var tripRequestParameter: BehaviorRelay<ScheduleRequestParameter>?
 	
-	init() {
+	init(){
 		disposeBag = DisposeBag()
-		searchResults = BehaviorRelay(value: [])  //?.accept([])
+		searchResults = BehaviorRelay(value: [])
 		searchCompleter =  PublishSubject<String>()
 		apiService = FlightScheduleAPIServiceImpl()
 		storageService = FlightScheduleStorageService()
@@ -46,6 +43,16 @@ class FlightSchedularViewModelImp : FlightSchedularViewModel{
 				self.placesCoordinatorDelegate?.showError(error: newValue ?? APIError.emptyData)
 			}
 		}
+	}
+	
+	private func instantiate(){
+		guard let searchCompleter = searchCompleter else { return  }
+		searchCompleter.subscribe(onNext: { [weak self] (value) in
+			print(value)
+			self?.getAirports(value: value )
+		}).disposed(by: disposeBag!)
+		
+		
 	}
 	
 	var flightScheduleResource: ScheduleResource?{
@@ -63,8 +70,6 @@ class FlightSchedularViewModelImp : FlightSchedularViewModel{
 	
 	var selectedSchedule : Schedule?
 	
-	
-
 	var scheduleFlightElement : [FlightElement]{
 		return selectedSchedule?.flightElements ?? []
 	}
@@ -72,34 +77,22 @@ class FlightSchedularViewModelImp : FlightSchedularViewModel{
 	var activeFlightModule : FlightModel?
 	
 	var flightsElementRelay: BehaviorRelay<[FlightElement]> {
-		let relay = BehaviorRelay<[FlightElement]>(value: scheduleFlightElement) // = BehaviorRelay(value: [])
+		let relay = BehaviorRelay<[FlightElement]>(value: scheduleFlightElement)
 	   return relay
 	}
 
 	func openSearchAirportView() {
 		self.coordinatorDelegate?.presentView()
 	}
-	func openMapView() {
-		self.scheduleCoordinatorDelegate?.presentMapView()
-	}
 	
-	private func instantiate(){
-		guard let searchCompleter = searchCompleter else { return  }
-		
-		
-		searchCompleter.subscribe(onNext: { [weak self] (value) in
-			print(value)
-			self?.getAirports(value: value )
-		}).disposed(by: disposeBag!)
-		
-		
+	func openMapView(){
+		self.scheduleCoordinatorDelegate?.presentMapView()
 	}
 	
 	func setActiveSchedule(schedule : Schedule){
 		self.selectedSchedule = schedule
 		let elementRelay : BehaviorRelay<[FlightElement]> = BehaviorRelay(value: schedule.flightElements)
 		self.scheduleCoordinatorDelegate?.showDetail(model: self, data: elementRelay)
-	
 	}
 	
 	func scheduleAtIndex(_ index : IndexPath) -> Schedule{
@@ -115,10 +108,6 @@ class FlightSchedularViewModelImp : FlightSchedularViewModel{
 		guard let departDetail = airport(code:  element.departure?.airportCode ?? "") else { return nil }
 		let model = FlightModel(flight: element, aIATA: arrivalDetail, dAITA: departDetail)
 		activeFlightModule = model
-    /**	let model = FlightModel(flight: element,
-		    aairport: airportName(code: element.arrival?.airportCode ?? ""),
-		    dairport: airportName(code: element.departure?.airportCode ?? ""))**/
-		
 		return model
 	}
 	
@@ -127,15 +116,7 @@ class FlightSchedularViewModelImp : FlightSchedularViewModel{
 		
 		guard	let arrivalDetail = airport(code: element.arrival?.airportCode ?? "") else { return nil }
 		guard let departDetail = airport(code:  element.departure?.airportCode ?? "") else { return nil }
-		
-		/**let arrivalStation =  AddressStation(address: arrivalDetail?.name ?? arrivalDetail?.iata ?? "",
-												coordinates: Coordinate(latitude: Double(arrivalDetail?.latitude ?? "0.00")!,
-																				longitude: Double(arrivalDetail?.longitude ?? "0.00")!))
-		
-		let departStation =  AddressStation(address: departDetail?.name ?? departDetail?.iata ?? "",
-		coordinates: Coordinate(latitude: Double(departDetail?.latitude ?? "0.00")!,
-										longitude: Double(departDetail?.longitude ?? "0.00")!))**/
-		
+				
 		
 	let model = FlightModel(flight: element, aIATA: arrivalDetail, dAITA: departDetail)
 		activeFlightModule = model
@@ -149,17 +130,16 @@ class FlightSchedularViewModelImp : FlightSchedularViewModel{
 									directFlight: Bool = false) {
 		
 		placesCoordinatorDelegate?.showSipnner()
-		
 		locationService.getAirportDetailForScheduleProcessing(origin: from,
 																				destination: to,
 																				dateFrom: dateFrom,
 																				direct: directFlight,
 																				success: { [weak self] params in
 													
-		    self?.getFlightSchedule(schedule: params!)
+		     self?.getFlightSchedule(schedule: params!)
 																	
 		}) { [weak self](error) in
-			self?.scheduleError = APIError.readableError(error!)
+			   self?.scheduleError = APIError.readableError(error!)
 		}
 		
 	}
@@ -202,7 +182,21 @@ class FlightSchedularViewModelImp : FlightSchedularViewModel{
 		locationService.getIATA(code: value) {  [weak self](values) in
 			self?.searchResults?.accept(values)
 		}
-		
+	}
+	
+	func annotationsForMap()-> [(arrival: MKAnnotation, departure: MKAnnotation)]{
+		return locationService.getMapAnnotations(elements: scheduleFlightElement, viewModel: self)
+	}
+	
+	func getpolyLine()->MKPolyline{
+		return locationService.getMKPolyline(annotations: annotationsForMap())
+	}
+	
+	func mkAnnotations() -> [MKAnnotation]{
+		return annotationsForMap().compactMap{ args in
+			let arrayofAnnotation : [MKAnnotation]  = [args.departure,args.arrival]
+			return arrayofAnnotation as? MKAnnotation
+		}
 	}
 	
 }

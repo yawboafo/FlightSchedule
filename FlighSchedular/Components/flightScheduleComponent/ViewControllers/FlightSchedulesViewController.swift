@@ -16,9 +16,7 @@ class FlightSchedulesViewController: UIViewController {
     override func viewDidLoad() {
 	  super.viewDidLoad()
 	  view.backgroundColor = .white
-    // self.navigationItem.setLeftBarButton(UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(closeView)), animated: true)
-		
-		
+   
     }
     
 

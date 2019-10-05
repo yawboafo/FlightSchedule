@@ -14,7 +14,6 @@ final class AppCoordinator : BaseCoordinator{
     init(window : UIWindow) {
         self.window = window
 		  model = FlightSchedularViewModelImp()
-		 // model.coordinatorDelegate = self
     }
 	 var model : FlightSchedularViewModelImp!
     var journeyCoordinator : JourneyMapViewCoordinator!
@@ -32,14 +31,6 @@ final class AppCoordinator : BaseCoordinator{
 		        self.window?.tintColor = UIColor.orange
 		        return navController
 	}
-/**	 func start()-> UIViewController{
-        journeyCoordinator = JourneyMapViewCoordinator()
-        let mainVC = journeyCoordinator.start()
-        self.window?.rootViewController = mainVC
-        self.window?.makeKeyAndVisible()
-        return mainVC
-    }
-	
-	**/
+
 }
 

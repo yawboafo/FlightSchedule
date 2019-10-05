@@ -28,11 +28,8 @@ class FlightModel: NSObject {
 	var airplane: String
 	
 	
-	// override init() {}
 	
-	
-	
-	init(flight : FlightElement,aIATA:IATA,dAITA: IATA) {
+	init(flight: FlightElement,aIATA:IATA,dAITA: IATA) {
 		arrivalIATA = aIATA
 		departtureIATA = dAITA
 		flightNumber = flight.marketingCarrier?.flightNumber ?? 0

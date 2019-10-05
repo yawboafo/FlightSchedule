@@ -91,7 +91,7 @@ extension FlightScheduleAPIServiceImpl {
 	   request.httpMethod = httpMethod.rawValue
 		guard let _token = token else { throw APIError.invalidToken }
 		guard let accessToken = _token?.accessToken else { throw APIError.invalidToken }
-		if _token.Expired { throw APIError.tokenExpired }
+		//if _token.Expired { throw APIError.tokenExpired }
 	   var header : [String:String] = APIRequest.defaultHeader
 		header.update(other: [Keys.accessToken.rawValue:"Bearer \(accessToken)"])
 		request.allHTTPHeaderFields = header

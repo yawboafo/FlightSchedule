@@ -47,7 +47,7 @@ class SearchForPlacesCoordinator: BaseCoordinator{
 		let navController = UINavigationController(rootViewController: flightsView)
 		navController.modalPresentationStyle = .overFullScreen
 		rootViewController.navigationController?.show(flightsView, sender: self)
-		//rootViewController.present(navController, animated: true)
+		
 	}
 }
 

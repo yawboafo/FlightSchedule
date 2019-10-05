@@ -39,10 +39,14 @@ protocol FlightSchedularLocationServiceProtocol: class {
 															 _ destination: String,
 															 _ dateFrom: String,
 															 _ direct: Bool)-> Observable<ScheduleRequestParameter>
+	
+	func getMapAnnotations(elements: [FlightElement],viewModel: FlightSchedularViewModelImp)-> [(arrival: MKAnnotation, departure: MKAnnotation)]
+	func getMKPolyline(annotations :  [(arrival: MKAnnotation, departure: MKAnnotation)])-> MKPolyline
 }
 
 
 class FlightSchedularLocationService:FlightSchedularLocationServiceProtocol {
+	
 	var storage: FlightScheduleStorageService?
 	var localIATA: Iata?
 	var opsQueue: OperationQueue
@@ -130,9 +134,37 @@ class FlightSchedularLocationService:FlightSchedularLocationServiceProtocol {
 	
 	func getIATA(code value: String,airport:@escaping([IATA])->Void){
 		 let data = 	localAirportData.filter{ args in args.name.clean.contains(value.clean)  || args.country.clean.contains(value.clean) }
-		airport(data)
+		 airport(data)
 	}
 	
+	func getMapAnnotations(elements: [FlightElement],viewModel: FlightSchedularViewModelImp) -> [(arrival: MKAnnotation, departure: MKAnnotation)] {
+		var annotations : [(arrival:MKAnnotation,departure:MKAnnotation)] = []
+		for item in elements{
+			let flightModule = viewModel.getFlightModule(element: item)
+			guard let arriveAnotation = (flightModule?.arrivalIATA.getAnnotation) else { continue }
+			arriveAnotation.title = flightModule?.arrivalAirport
+			arriveAnotation.subtitle = flightModule?.arrivalTime
+			
+			guard let destinationAnotation = (flightModule?.departtureIATA.getAnnotation) else { continue }
+			destinationAnotation.title = flightModule?.departAirport
+			destinationAnotation.subtitle = flightModule?.departTime
+			annotations.append((arrival:arriveAnotation,departure:destinationAnotation))
+		}
+		 return annotations
+	}
+	
+	
+	func getMKPolyline(annotations :  [(arrival: MKAnnotation, departure: MKAnnotation)])-> MKPolyline{
+		var points = [CLLocationCoordinate2D]()
+		for annotation in annotations {
+			points.append(annotation.departure.coordinate)
+		   points.append(annotation.arrival.coordinate)
+		}
+		
+		let polyline = MKPolyline(coordinates: &points, count: points.count)
+      return polyline
+				 
+	}
 	
 	
 	

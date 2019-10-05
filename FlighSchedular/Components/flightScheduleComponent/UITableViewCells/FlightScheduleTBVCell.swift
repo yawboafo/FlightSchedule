@@ -46,7 +46,7 @@ class FlightScheduleTBVCell: UITableViewCell {
 	func configure(_ schedule : Schedule){
 		let _schedule = ScheduleModel(schedule: schedule)
 		journeyValue.text = _schedule.totalTransits
-		timeValue.text = _schedule.journeyTime
+		timeValue.text = _schedule.readableDuration
 	}
 	
 	lazy var timeLabel: UILabel = {
