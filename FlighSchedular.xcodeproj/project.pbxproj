@@ -113,14 +113,14 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		48CAF3FD2342348D0075BF29 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
 				48CAF3FC2342348D0075BF29 /* FloatingUIViews.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -292,9 +292,8 @@
 		482139FB2345EBA1001A4420 /* searchPlaceComponent */ = {
 			isa = PBXGroup;
 			children = (
-				48213A022345EC4B001A4420 /* ViewControllers */,
+				48441D812348C81C000FE352 /* UIViews */,
 				48213A012345EC3C001A4420 /* Coordinators */,
-				48213A002345EC33001A4420 /* subViews */,
 			);
 			path = searchPlaceComponent;
 			sourceTree = "<group>";
@@ -302,12 +301,10 @@
 		482139FC2345EBBA001A4420 /* flightScheduleComponent */ = {
 			isa = PBXGroup;
 			children = (
+				48441D802348C7D6000FE352 /* UIViews */,
 				48CAF406234239910075BF29 /* ViewModels */,
 				48213A272345EDB3001A4420 /* ComponentsModels */,
-				481609D62344E25200C387B4 /* UITableViewCells */,
 				482139FF2345EC10001A4420 /* Coordinators */,
-				482139FE2345EC05001A4420 /* ViewControllers */,
-				482139FD2345EBF6001A4420 /* SubViews */,
 			);
 			path = flightScheduleComponent;
 			sourceTree = "<group>";
@@ -387,6 +384,33 @@
 				48213A2C2345F1E8001A4420 /* FlightModel.swift */,
 			);
 			path = ComponentsModels;
+			sourceTree = "<group>";
+		};
+		48441D802348C7D6000FE352 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				481609D62344E25200C387B4 /* UITableViewCells */,
+				482139FE2345EC05001A4420 /* ViewControllers */,
+				482139FD2345EBF6001A4420 /* SubViews */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		48441D812348C81C000FE352 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				48213A022345EC4B001A4420 /* ViewControllers */,
+				48213A002345EC33001A4420 /* subViews */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		48441D822348C82A000FE352 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				48213A032345ECD0001A4420 /* ViewControllers */,
+			);
+			path = UIViews;
 			sourceTree = "<group>";
 		};
 		4894AF0A2342C30600754E50 /* HTTP */ = {
@@ -571,8 +595,8 @@
 		48CAF4032342389E0075BF29 /* journeyComponent */ = {
 			isa = PBXGroup;
 			children = (
+				48441D822348C82A000FE352 /* UIViews */,
 				48213A042345ECDE001A4420 /* Coordinators */,
-				48213A032345ECD0001A4420 /* ViewControllers */,
 			);
 			path = journeyComponent;
 			sourceTree = "<group>";

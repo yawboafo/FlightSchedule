@@ -21,7 +21,7 @@ final class APIRequestExecuter {
 	func execute<T>(completionQueue: DispatchQueue = .main,
 						 completionHandler: @escaping (Result<T,APIError>) -> Void) where T : Decodable{
 		   urlSession.dataTask(with: request) { (data, response, error) in
-				print(data?.toString,response,error)
+				//print(data?.toString,response,error)
 			guard error == nil else {return completionHandler(.failure(.mainError(error!)))}
 			guard let data = data else {return completionHandler(.failure(.emptyData))}
 			guard let httpResponse = response as? HTTPURLResponse else { return completionHandler(.failure(.invalidResponse)) }
