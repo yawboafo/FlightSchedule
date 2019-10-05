@@ -4,13 +4,13 @@ Get Flight schedule using Lufthansa developer API
 ## Architecture 
 1. MVVM - C
 
-## External Resources
+## External Frameworks's
 * RXswift
 * RxCocoa
 * RxBlocking
 * RxTest 
 
-## Future Frameworks's
+## Future Improvement
 * Add Markers to Polylin Points
 
 
