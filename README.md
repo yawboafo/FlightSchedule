@@ -4,7 +4,7 @@ Showing the origin and destination of the flight on a map upon selection of a sc
 And connect them with a polyline.
 
 ## Architecture 
-1. MVVM - C
+ MVVM - C
 
 ## External Frameworks
 * RXswift
