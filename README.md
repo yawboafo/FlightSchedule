@@ -3,6 +3,12 @@ Get Flight schedule using Lufthansa developer API,
 Showing the origin and destination of the flight on a map upon selection of a schedule
 And connect them with a polyline.
 
+## IDE 
+Xcode 11
+
+## Swift Language Version
+ Swift 5 
+
 ## Architecture 
  MVVM - C
 
