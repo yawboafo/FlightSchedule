@@ -44,11 +44,6 @@
 		48213A302345F24C001A4420 /* IATA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213A2A2345EDBF001A4420 /* IATA.swift */; };
 		48213A312345F24C001A4420 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213A292345EDBF001A4420 /* Station.swift */; };
 		48441D7F2348A4AA000FE352 /* FlightScheduleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441D7E2348A4AA000FE352 /* FlightScheduleViewModelTests.swift */; };
-		48441DCB2348CD57000FE352 /* FloatingSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC42348CD57000FE352 /* FloatingSearchBar.swift */; };
-		48441DCC2348CD57000FE352 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC52348CD57000FE352 /* Extensions.swift */; };
-		48441DCD2348CD57000FE352 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC62348CD57000FE352 /* ClickableView.swift */; };
-		48441DCE2348CD57000FE352 /* FloatingSearchBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC82348CD57000FE352 /* FloatingSearchBox.swift */; };
-		48441DCF2348CD57000FE352 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC92348CD57000FE352 /* DatePickerDialog.swift */; };
 		48441DD92348CD9A000FE352 /* FloatingUIViews.h in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48441DC72348CD57000FE352 /* FloatingUIViews.h */; };
 		48795B8F23435B630067A0C8 /* FlightSchedulesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48795B8E23435B630067A0C8 /* FlightSchedulesCoordinator.swift */; };
 		48795B9223435BF10067A0C8 /* FlightSchedulesSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48795B9123435BF00067A0C8 /* FlightSchedulesSubView.swift */; };
@@ -88,6 +83,12 @@
 		48D5BEFC23425C4A0023C387 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEF923425C490023C387 /* Helper.swift */; };
 		48D5BEFE23425CAB0023C387 /* FlightSchedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BEFD23425CAB0023C387 /* FlightSchedulesViewController.swift */; };
 		48D5BF012342A9470023C387 /* FlightSchedularLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5BF002342A9470023C387 /* FlightSchedularLocationService.swift */; };
+		48DE8382234F360B00C06821 /* FloatingSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC42348CD57000FE352 /* FloatingSearchBar.swift */; };
+		48DE8383234F360B00C06821 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC52348CD57000FE352 /* Extensions.swift */; };
+		48DE8384234F360B00C06821 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC62348CD57000FE352 /* ClickableView.swift */; };
+		48DE8385234F360B00C06821 /* FloatingUIViews.h in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC72348CD57000FE352 /* FloatingUIViews.h */; };
+		48DE8386234F360B00C06821 /* FloatingSearchBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC82348CD57000FE352 /* FloatingSearchBox.swift */; };
+		48DE8387234F360B00C06821 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48441DC92348CD57000FE352 /* DatePickerDialog.swift */; };
 		48F15B7B234929AA0083024C /* FlightScheduleAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F15B7A234929AA0083024C /* FlightScheduleAPIServiceTests.swift */; };
 		48F15B7D23492AA40083024C /* FlightSchedularLocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F15B7C23492AA40083024C /* FlightSchedularLocationServiceProtocol.swift */; };
 		EBBB07471D18AD8C8A864D0E /* Pods_FlighSchedular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C861C699E77B8A7118234F4 /* Pods_FlighSchedular.framework */; };
@@ -500,7 +501,6 @@
 		48A0DE6C23422C4B004B1369 = {
 			isa = PBXGroup;
 			children = (
-				48441DC32348CD57000FE352 /* FloatingUIViews */,
 				48A0DE7723422C4B004B1369 /* FlighSchedular */,
 				48A0DE8E23422C4D004B1369 /* FlighSchedularTests */,
 				48A0DE9923422C4D004B1369 /* FlighSchedularUITests */,
@@ -523,6 +523,7 @@
 		48A0DE7723422C4B004B1369 /* FlighSchedular */ = {
 			isa = PBXGroup;
 			children = (
+				48441DC32348CD57000FE352 /* FloatingUIViews */,
 				4894AF0A2342C30600754E50 /* HTTP */,
 				48D5BECE234259F90023C387 /* AppModels */,
 				48D5BECA2342453B0023C387 /* Helpers */,
@@ -919,11 +920,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48441DCB2348CD57000FE352 /* FloatingSearchBar.swift in Sources */,
-				48441DCC2348CD57000FE352 /* Extensions.swift in Sources */,
-				48441DCD2348CD57000FE352 /* ClickableView.swift in Sources */,
-				48441DCE2348CD57000FE352 /* FloatingSearchBox.swift in Sources */,
-				48441DCF2348CD57000FE352 /* DatePickerDialog.swift in Sources */,
+				48DE8382234F360B00C06821 /* FloatingSearchBar.swift in Sources */,
+				48DE8383234F360B00C06821 /* Extensions.swift in Sources */,
+				48DE8384234F360B00C06821 /* ClickableView.swift in Sources */,
+				48DE8385234F360B00C06821 /* FloatingUIViews.h in Sources */,
+				48DE8386234F360B00C06821 /* FloatingSearchBox.swift in Sources */,
+				48DE8387234F360B00C06821 /* DatePickerDialog.swift in Sources */,
 				48213A2F2345F24C001A4420 /* ScheduleModel.swift in Sources */,
 				48213A302345F24C001A4420 /* IATA.swift in Sources */,
 				48213A312345F24C001A4420 /* Station.swift in Sources */,
