@@ -18,7 +18,6 @@ class FlightSchedularLocationService:FlightSchedularLocationServiceProtocol {
 	var storage: FlightScheduleStorageService?
 	var localIATA: Iata?
 	var opsQueue: OperationQueue
-	
 	var localAirportData : [IATA]{
 		return  localIATA?.map{ $0.value } ?? []
 	}
